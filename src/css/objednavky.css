@@ -1,0 +1,9 @@
+:root {
+  --color: #25516b;
+  --fontfamaly: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-top: 150px;
+  text-align: center;
+}

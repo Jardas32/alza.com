@@ -1,0 +1,98 @@
+.wrapper-zanacky-bground {
+  margin-top: 30px;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.wrapper-znacky-carusel {
+  /* background-color: aqua; */
+  position: relative;
+  overflow: hidden;
+}
+
+.carusel-slider {
+  transition: all 0.3s;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-znacky-carusel {
+  margin-right: 5px;
+  flex: 0 0 calc(100% / 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-znacky-carusel {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.button-arrow-znacky {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #3ca6e4a9;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  z-index: 10;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.153);
+}
+
+.button-left-znacky {
+  top: 0px;
+  left: 0px;
+}
+
+.button-left-znacky span {
+  position: absolute;
+  top: 29px;
+  left: 8px;
+  background-color: #fff;
+  width: 15px;
+  height: 2px;
+  border-radius: 2px;
+}
+
+.button-arrow-znacky span:nth-child(1) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.button-arrow-znacky span:nth-child(2) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.button-right-znacky {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 30px;
+  height: 60px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.153);
+}
+
+.button-right-znacky span {
+  position: absolute;
+  top: 29px;
+  left: 8px;
+  background-color: #fff;
+  width: 15px;
+  height: 2px;
+  border-radius: 2px;
+}
+
+.button-arrow-znacky:hover {
+  background-color: #4798c7;
+}

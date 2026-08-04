@@ -1,0 +1,30 @@
+.btn-add-cart {
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.116);
+  gap: 10px;
+}
+
+.btn-add-cart:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.297);
+}
+
+.btn-pridano {
+  background-color: transparent;
+  border: none;
+  color: rgb(34, 169, 34);
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 8px;
+}
