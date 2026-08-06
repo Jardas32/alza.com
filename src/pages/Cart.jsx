@@ -14,7 +14,7 @@ function Cart() {
           <div className="wrapper-empty">
             <div className="wrapper-img-empty">
               <img
-                src="src/assets/bg-basket-empty.png"
+                src="./bg-basket-empty.png"
                 alt="img-empty"
                 className="img-empty"
               />
@@ -102,7 +102,7 @@ function Cart() {
                     <td style={{ textAlign: "start" }}>
                       <div className="wrapper-td-img">
                         <img
-                          src="src/assets/warranty-prodlouzenaZaruka.webp"
+                          src="./warranty-prodlouzenaZaruka.webp"
                           alt="img"
                           className="img-icon"
                         />
@@ -122,7 +122,7 @@ function Cart() {
                     <td style={{ textAlign: "start" }}>
                       <div className="wrapper-td-img">
                         <img
-                          src="src/assets/warranty-okamzitaVymena.webp"
+                          src="./warranty-okamzitaVymena.webp"
                           alt="img"
                           className="img-icon"
                         />
@@ -142,7 +142,7 @@ function Cart() {
                     <td style={{ textAlign: "start" }}>
                       <div className="wrapper-td-img">
                         <img
-                          src="src/assets/warranty-pojisteniZbozi.webp"
+                          src="./warranty-pojisteniZbozi.webp"
                           alt="img"
                           className="img-icon"
                         />

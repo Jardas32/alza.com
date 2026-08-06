@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
 
       <Routes>
@@ -27,10 +27,11 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/infoproduct" element={<Infoproduct />} />
       </Routes>
-      <Menufooter />
 
+      <Menufooter />
+      
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

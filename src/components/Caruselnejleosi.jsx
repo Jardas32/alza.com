@@ -72,10 +72,10 @@ export default function Carusel({ products }) {
             </Link>
             <div className="wrapper-stars">
               <div className="wrapper-starts-img">
-                <img src="src/assets/star.png" className="img-start" />
-                <img src="src/assets/star.png" className="img-start" />
-                <img src="src/assets/star.png" className="img-start" />
-                <img src="src/assets/star.png" className="img-start" />
+                <img src="./star.png" className="img-start" />
+                <img src="./star.png" className="img-start" />
+                <img src="./star.png" className="img-start" />
+                <img src="./star.png" className="img-start" />
               </div>
               <span>4,7</span>
               <span>1135x</span>

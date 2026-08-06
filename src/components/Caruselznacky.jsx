@@ -4,35 +4,35 @@ import { useState, useEffect, useRef } from "react";
 function Caruselznacky() {
   const items = [
     {
-      img: "src/assets/logo-alzapower.svg",
+      img: "./logo-alzapower.svg",
       text: "Příslušenství k mobilům a notebookům",
     },
     {
-      img: "src/assets/logo-siguro.svg",
+      img: "./logo-siguro.svg",
       text: "Domácí elektro spotřebiče",
     },
     {
-      img: "src/assets/logo-alzaergo.svg",
+      img: "./logo-alzaergo.svg",
       text: "Ergonomická kancelář pro každého",
     },
     {
-      img: "src/assets/logo-alzaguard.svg",
+      img: "./logo-alzaguard.svg",
       text: "Ochrana mobilů a tabletů",
     },
     {
-      img: "src/assets/logo-rapture.svg",
+      img: "./logo-rapture.svg",
       text: "Elitní výbava pro hráče",
     },
     {
-      img: "src/assets/logo-siguro.svg",
+      img: "./logo-siguro.svg",
       text: "Domácí elektro spotřebiče",
     },
     {
-      img: "src/assets/logo-alzaergo.svg",
+      img: "./logo-alzaergo.svg",
       text: "Ergonomická kancelář pro každého",
     },
     {
-      img: "src/assets/logo-alzacafe.svg",
+      img: "./logo-alzacafe.svg",
       text: "Káva, za kterou (si) stojíme",
     },
   ];

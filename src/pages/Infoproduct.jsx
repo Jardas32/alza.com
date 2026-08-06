@@ -11,23 +11,23 @@ function Infoproduct() {
   const arrStars = [
     {
       id: 1,
-      img: "src/assets/star.png",
+      img: "./star.png",
     },
     {
       id: 2,
-      img: "src/assets/star.png",
+      img: "./star.png",
     },
     {
       id: 3,
-      img: "src/assets/star.png",
+      img: "./star.png",
     },
     {
       id: 4,
-      img: "src/assets/star.png",
+      img: "./star.png",
     },
     {
       id: 5,
-      img: "src/assets/star.png",
+      img: "./star.png",
     },
   ];
 
@@ -147,7 +147,7 @@ function Infoproduct() {
               <div className="wrapper-chackbox">
                 <input type="checkbox" />
                 <div className="wrapper-img-bluetoothe">
-                  <img src="src/assets/JA065b1.webp" alt="img" />
+                  <img src="./JA065b1.webp" alt="img" />
                 </div>
                 <p className="checkbox-text">
                   Bluetooth lokalizační čip - Apple AirTag
@@ -179,7 +179,7 @@ function Infoproduct() {
               </a>
               <div className="wraper-doruceni">
                 <img
-                  src="src/assets/unknown-delivery.svg"
+                  src="./unknown-delivery.svg"
                   alt="img-doruceni"
                   className="img-doruceni"
                 />
@@ -188,7 +188,7 @@ function Infoproduct() {
               <div className="wrapper-alzabox">
                 <div className="wrapper-left-alzabox">
                   <img
-                    src="src/assets/alzabox-promo.svg"
+                    src="./alzabox-promo.svg"
                     alt="img"
                     className="img-alzabox"
                   />
@@ -207,7 +207,7 @@ function Infoproduct() {
                 <p className="text-dph">bez DPH 2 471,-</p>
                 <div className="wrapper-garance">
                   <img
-                    src="src/assets/high-quality.png"
+                    src="./high-quality.png"
                     alt="img-garance"
                     className="img-garance"
                   />
@@ -218,7 +218,7 @@ function Infoproduct() {
               <div className="wrapper-btn-add-cart-left">
                 <p className="price-right">
                   <img
-                    src="src/assets/home_credit_compact.svg"
+                    src="./home_credit_compact.svg"
                     alt="img-home"
                   />
                   Home Credit AKCE
@@ -243,7 +243,7 @@ function Infoproduct() {
             <div className="wrapper-do-oblibene">
               <div className="oblibene">
                 <img
-                  src="src/assets/heart.png"
+                  src="./heart.png"
                   alt="img-hard"
                   className="img-add-oblibene"
                 />
@@ -255,7 +255,6 @@ function Infoproduct() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

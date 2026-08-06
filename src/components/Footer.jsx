@@ -3,27 +3,27 @@ import "../css/footer.css";
 const arrVihody = [
   {
     id: 1,
-    img: "src/assets/best-eshop.svg",
+    img: "./best-eshop.svg",
     text: "Nejspolehlivější internetový obchod v ČR",
   },
   {
     id: 2,
-    img: "src/assets/same-day-delivery.svg",
+    img: "./same-day-delivery.svg",
     text: "Zboží doručíme již v den objednání",
   },
   {
     id: 3,
-    img: "src/assets/nonstop-support.svg",
+    img: "./nonstop-support.svg",
     text: "Nonstop dostupná zákaznická podpora",
   },
   {
     id: 4,
-    img: "src/assets/free-delivery.svg",
+    img: "./free-delivery.svg",
     text: "Doručení zdarma na cokoliv s AlzaPlus+",
   },
   {
     id: 5,
-    img: "src/assets/pickup-places.svg",
+    img: "./pickup-places.svg",
     text: "Prodejny a odběrná místa po celé ČR",
   },
 ];
@@ -31,31 +31,31 @@ const arrVihody = [
 const arrZnackyFirem = [
   {
     id: 1,
-    img: "src/assets/mastercard.svg",
+    img: "./mastercard.svg",
   },
   {
     id: 2,
-    img: "src/assets/maestro.svg",
+    img: "./maestro.svg",
   },
   {
     id: 3,
-    img: "src/assets/visa.svg",
+    img: "./visa.svg",
   },
   {
     id: 4,
-    img: "src/assets/isic.svg",
+    img: "./isic.svg",
   },
   {
     id: 5,
-    img: "src/assets/mastercard-obchodnik-cz.svg",
+    img: "./mastercard-obchodnik-cz.svg",
   },
   {
     id: 6,
-    img: "src/assets/kristalova-lupa.webp",
+    img: "./kristalova-lupa.webp",
   },
   {
     id: 7,
-    img: "src/assets/udrzitelny-eshop.webp",
+    img: "./udrzitelny-eshop.webp",
   },
 ];
 
@@ -85,18 +85,14 @@ function Footer() {
           <p className="text-banner-footer">Více o aplikaci</p>
         </div>
         <div className="wrapper-banner-center-img">
-          <img src="src/assets/qr.svg" alt="qarcod" className="img-qarcod" />
+          <img src="./qr.svg" alt="qarcod" className="img-qarcod" />
           <div className="wrapper-google-app">
             <div className="wrapper-googles">
-              <img
-                src="src/assets/app-store.svg"
-                alt="img"
-                className="img-app-google"
-              />
+              <img src="./app-store.svg" alt="img" className="img-app-google" />
             </div>
             <div className="wrapper-googles">
               <img
-                src="src/assets/google-play.svg"
+                src="./google-play.svg"
                 alt="img"
                 className="img-app-google"
               />
@@ -104,7 +100,7 @@ function Footer() {
           </div>
         </div>
         <div className="wrapper-banner-footer-right">
-          <img className="img-phone" src="src/assets/alzak.png" alt="img-" />
+          <img className="img-phone" src="./alzak.png" alt="img-" />
         </div>
       </div>
       <div className="wrapper-znacky-firem">
@@ -164,34 +160,30 @@ function Footer() {
           <p className="text-sledujte">Sledujte nás</p>
           <div className="wrapper-center-soc-img">
             <div className="wrapper-img-soc">
-              <img src="src/assets/facebook.svg" alt="img" className="imgSoc" />
+              <img src="./facebook.svg" alt="img" className="imgSoc" />
             </div>
             <div className="wrapper-img-soc">
-              <img
-                src="src/assets/instagram.svg"
-                alt="img"
-                className="imgSoc"
-              />
+              <img src="./instagram.svg" alt="img" className="imgSoc" />
             </div>
             <div className="wrapper-img-soc">
-              <img src="src/assets/youtube.svg" alt="img" className="imgSoc" />
+              <img src="./youtube.svg" alt="img" className="imgSoc" />
             </div>
             <div className="wrapper-img-soc">
-              <img src="src/assets/twitter.svg" alt="img" className="imgSoc" />
+              <img src="./twitter.svg" alt="img" className="imgSoc" />
             </div>
           </div>
           <div className="wrapper-language">
             <p className="text-language">Jazyk webu (website language)</p>
             <p className="wrapper-img-cz">
-              <img src="src/assets/cz.png" alt="img" className="imgCz" />
+              <img src="./cz.png" alt="img" className="imgCz" />
               <span>CZ</span>
             </p>
           </div>
         </div>
       </div>
       <div className="wrapper-footer-bottom">
-        <img src="src/assets/heart.png" alt="img-heart" className="img-heart" />
-        © 1994 - 2025 Alza.cz a.s.
+        <img src="./heart.png" alt="img-heart" className="img-heart" />© 1994 -
+        2025 Alza.cz a.s.
       </div>
     </div>
   );

@@ -91,7 +91,7 @@ function Caruselnovinky({ products }) {
               >
                 <img
                   style={{ width: "20px" }}
-                  src="src/assets/cart.png"
+                  src="./cart.png"
                   alt="img-cart"
                   className="img-cart"
                 />

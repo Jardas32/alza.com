@@ -17,7 +17,7 @@ function Home() {
         <div className="wrapper-banner wrapper-top-hidden">
           <div className="top-banner wrapper-img-banner">
             <img
-              src="src/assets/AD10_banner_1025x250_BEZ_CTA_CZ.jpg"
+              src="./AD10_banner_1025x250_BEZ_CTA_CZ.jpg"
               alt="img-banner"
               className="img-banner"
             />
@@ -60,7 +60,7 @@ function Home() {
         <div className="wrapper-banner">
           <div className="top-banner wrapper-img-banner wrapper-bottom-hidden">
             <img
-              src="src/assets/AD10_banner_1025x250_BEZ_CTA_CZ.jpg"
+              src="./AD10_banner_1025x250_BEZ_CTA_CZ.jpg"
               alt="img-banner"
               className="img-banner"
             />
@@ -106,7 +106,7 @@ function Home() {
                 Užij si doručení zdarma s
                 <img
                   className="img-plus"
-                  src="src/assets/alzaplus-logo-white (1).svg"
+                  src="./alzaplus-logo-white (1).svg"
                   alt=""
                 />
               </p>
@@ -130,7 +130,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

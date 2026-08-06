@@ -2,16 +2,16 @@ import "../css/znacky.css";
 import { useState, useRef, useEffect } from "react";
 
 const arrZnacky = [
-  { id: 1, img: "src/assets/apple_6.webp" },
-  { id: 2, img: "src/assets/samsung_6.webp" },
-  { id: 3, img: "src/assets/lego_2.webp" },
-  { id: 4, img: "src/assets/dell_4.webp" },
-  { id: 5, img: "src/assets/lg_2.webp" },
-  { id: 6, img: "src/assets/hp_2.webp" },
-  { id: 7, img: "src/assets/sony.webp" },
-  { id: 8, img: "src/assets/epson_2.webp" },
-  { id: 9, img: "src/assets/nikon.webp" },
-  { id: 10, img: "src/assets/xiaomi_6.webp" },
+  { id: 1, img: "./apple_6.webp" },
+  { id: 2, img: "./samsung_6.webp" },
+  { id: 3, img: "./lego_2.webp" },
+  { id: 4, img: "./dell_4.webp" },
+  { id: 5, img: "./lg_2.webp" },
+  { id: 6, img: "./hp_2.webp" },
+  { id: 7, img: "./sony.webp" },
+  { id: 8, img: "./epson_2.webp" },
+  { id: 9, img: "./nikon.webp" },
+  { id: 10, img: "./xiaomi_6.webp" },
 ];
 
 function Znacky() {

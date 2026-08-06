@@ -2,7 +2,7 @@ export const allProducts = {
   products: [
     {
       id: 1,
-      img: "src/img-product/JJ092q1a9d05.webp",
+      img: `${import.meta.env.BASE_URL}/JJ092q1a9d05.webp`,
       title: "JBL Tune 520BT černá",
       quantity: 1,
       skladem: 9,
@@ -10,7 +10,7 @@ export const allProducts = {
     },
     {
       id: 2,
-      img: "src/img-product/NA567g52j2z17.webp",
+      img: `${import.meta.env.BASE_URL}/NA567g52j2z17.webp`,
       title: "ASUS Vivobook 15 X1502VA-NJ1257W Quiet Blue",
       quantity: 1,
       skladem: 12,
@@ -18,7 +18,7 @@ export const allProducts = {
     },
     {
       id: 3,
-      img: "src/img-product/NT210n2i.webp",
+      img: `${import.meta.env.BASE_URL}/NT210n2i.webp`,
       title: "Lenovo Idea Tab 11 WiFi 8GB/256GB Luna Grey",
       quantity: 1,
       skladem: 6,
@@ -26,7 +26,7 @@ export const allProducts = {
     },
     {
       id: 4,
-      img: "src/img-product/PHIEK201.webp",
+      img: `${import.meta.env.BASE_URL}/PHIEK201.webp`,
       title: "Philips Sonicare 5300 HX7101/02",
       quantity: 1,
       skladem: 3,
@@ -34,7 +34,7 @@ export const allProducts = {
     },
     {
       id: 5,
-      img: "src/img-product/JJ091c4.webp",
+      img: `${import.meta.env.BASE_URL}/JJ091c4.webp`,
       title: "JBL Charge 6 Black",
       quantity: 1,
       skladem: 5,
@@ -42,7 +42,7 @@ export const allProducts = {
     },
     {
       id: 6,
-      img: "src/img-product/DELAK186.webp",
+      img: `${import.meta.env.BASE_URL}/DELAK186.webp`,
       title: "De'Longhi Eletta Explore ECAM 450.86.T",
       quantity: 1,
       skladem: 10,
@@ -50,7 +50,7 @@ export const allProducts = {
     },
     {
       id: 7,
-      img: "src/img-product/AMZTrx3o.webp",
+      img: `${import.meta.env.BASE_URL}/AMZTrx3o.webp`,
       title: "Amazfit T-Rex 3 Onyx",
       quantity: 1,
       skladem: 7,
@@ -58,7 +58,7 @@ export const allProducts = {
     },
     {
       id: 8,
-      img: "src/img-product/MSX0052b5.webp",
+      img: `${import.meta.env.BASE_URL}/MSX0052b5.webp`,
       title: "PlayStation 5 (Slim) - 1TB + Astro Bot",
       quantity: 1,
       skladem: 6,
@@ -66,7 +66,7 @@ export const allProducts = {
     },
     {
       id: 9,
-      img: "src/img-product/JA940j4a.webp",
+      img: `${import.meta.env.BASE_URL}/JA940j4a.webp`,
       title: "Apple AirPods 4",
       quantity: 1,
       skladem: 6,
@@ -74,7 +74,7 @@ export const allProducts = {
     },
     {
       id: 10,
-      img: "src/img-product/RI055b2.webp",
+      img: `${import.meta.env.BASE_URL}/RI055b2.webp`,
       title: "iPhone 17 Pro 256GB kosmicky oranžová",
       quantity: 1,
       skladem: 8,
@@ -82,7 +82,7 @@ export const allProducts = {
     },
     {
       id: 11,
-      img: "src/img-product/NL251a2a.webp",
+      img: `${import.meta.env.BASE_URL}/NL251a2a.webp`,
       title: "MacBook Air 13 M4 CZ 2025 Temně",
       quantity: 1,
       skladem: 14,
@@ -90,7 +90,7 @@ export const allProducts = {
     },
     {
       id: 12,
-      img: "src/img-product/NL238s4z1a.webp",
+      img: `${import.meta.env.BASE_URL}/NL238s4z1a.webp`,
       title: "iPad Pro M5 13 256GB vesmírně černá 2025",
       quantity: 1,
       skladem: 7,
@@ -98,7 +98,7 @@ export const allProducts = {
     },
     {
       id: 13,
-      img: "src/img-product/RI057b4.webp",
+      img: `${import.meta.env.BASE_URL}/RI057b4.webp`,
       title: "iPhone Air 256GB blankytně modrá",
       quantity: 1,
       skladem: 9,
@@ -106,7 +106,7 @@ export const allProducts = {
     },
     {
       id: 14,
-      img: "src/img-product/JA940k4a.webp",
+      img: `${import.meta.env.BASE_URL}/JA940k4a.webp`,
       title: "Apple AirPods Pro 3",
       quantity: 1,
       skladem: 6,
@@ -114,7 +114,7 @@ export const allProducts = {
     },
     {
       id: 15,
-      img: "src/img-product/NL271a1a.webp",
+      img: `${import.meta.env.BASE_URL}/NL271a1a.webp`,
       title: "MacBook Pro 14 M5 CZ 2025 Vesmírně černý",
       quantity: 1,
       skladem: 4,
@@ -122,7 +122,7 @@ export const allProducts = {
     },
     {
       id: 16,
-      img: "src/img-product/RI056b3-01.webp",
+      img: `${import.meta.env.BASE_URL}/RI056b3-01.webp`,
       title: "iPhone 17 Pro Max 256GB temně modrá",
       quantity: 1,
       skladem: 8,
@@ -130,7 +130,7 @@ export const allProducts = {
     },
     {
       id: 17,
-      img: "src/img-product/INS25002.webp",
+      img: `${import.meta.env.BASE_URL}/INS25002.webp`,
       title: "Insta360 Antigravity A1 Explorer Bundle",
       quantity: 1,
       skladem: 10,
@@ -138,7 +138,7 @@ export const allProducts = {
     },
     {
       id: 18,
-      img: "src/img-product/STR_OB_PL08.webp",
+      img: `${import.meta.env.BASE_URL}/STR_OB_PL08.webp`,
       title: "Stormred Overball 25 cm, zelený",
       quantity: 1,
       skladem: 7,
@@ -146,7 +146,7 @@ export const allProducts = {
     },
     {
       id: 19,
-      img: "src/img-product/WMSW001.webp",
+      img: `${import.meta.env.BASE_URL}/WMSW001.webp`,
       title: "WowME Prisma černé",
       quantity: 1,
       skladem: 6,
@@ -154,7 +154,7 @@ export const allProducts = {
     },
     {
       id: 20,
-      img: "src/img-product/BJ_NT_1000B07.webp",
+      img: `${import.meta.env.BASE_URL}/BJ_NT_1000B07.webp`,
       title: "Bery Jones Arašídy pražené neloupané JUMBO 1kg",
       quantity: 1,
       skladem: 5,
@@ -162,7 +162,7 @@ export const allProducts = {
     },
     {
       id: 21,
-      img: "src/img-product/STR_KB_10.webp",
+      img: `${import.meta.env.BASE_URL}/STR_KB_10.webp`,
       title: "Stormred Kettlebell 10 kg",
       quantity: 1,
       skladem: 12,
@@ -170,7 +170,7 @@ export const allProducts = {
     },
     {
       id: 22,
-      img: "src/img-product/ETK200Sb.webp",
+      img: `${import.meta.env.BASE_URL}/ETK200Sb.webp`,
       title: "Eternico K200S Wireless Touchpad bílá ",
       quantity: 1,
       skladem: 6,
@@ -178,7 +178,7 @@ export const allProducts = {
     },
     {
       id: 23,
-      img: "src/img-product/SGR_KG_R850B.webp",
+      img: `${import.meta.env.BASE_URL}/SGR_KG_R850B.webp`,
       title: "Siguro Brousek Roll Sharp",
       quantity: 1,
       skladem: 7,
@@ -186,7 +186,7 @@ export const allProducts = {
     },
     {
       id: 24,
-      img: "src/img-product/STR_PL_CS01.webp",
+      img: `${import.meta.env.BASE_URL}/STR_PL_CS01.webp`,
       title: "Stormred Balanční polštářek černý",
       quantity: 1,
       skladem: 6,
@@ -196,112 +196,112 @@ export const allProducts = {
   category: [
     {
       id: 1,
-      img: "src/icons/alza dny.webp",
+      img: `${import.meta.env.BASE_URL}/alza dny.webp`,
       text: "Alza dny",
     },
     {
       id: 2,
-      img: "src/icons/alza d.webp",
+      img: `${import.meta.env.BASE_URL}/alza d.webp`,
       text: "Alza dny - Philips",
     },
     {
       id: 3,
-      img: "src/icons/chity.webp",
+      img: `${import.meta.env.BASE_URL}/chity.webp`,
       text: "Mobily, chytré hodinky, tablety",
     },
     {
       id: 4,
-      img: "src/icons/pocitace.svg",
+      img: `${import.meta.env.BASE_URL}/pocitace.svg`,
       text: "Počítače notebooky",
     },
     {
       id: 5,
-      img: "src/icons/hracky.svg",
+      img: `${import.meta.env.BASE_URL}/hracky.svg`,
       text: "Hračky, pro děti a miminka",
     },
     {
       id: 6,
-      img: "src/icons/games.svg",
+      img: `${import.meta.env.BASE_URL}/games.svg`,
       text: "Gaming, hry a zábava",
     },
     {
       id: 7,
-      img: "src/icons/tv-foto-audio.svg",
+      img: `${import.meta.env.BASE_URL}/tv-foto-audio.svg`,
       text: "TV, foto, audio-video",
     },
     {
       id: 8,
-      img: "src/icons/spotreby.svg",
+      img: `${import.meta.env.BASE_URL}/spotreby.svg`,
       text: "Velké spotřebiče",
     },
     {
       id: 9,
-      img: "src/icons/domaci.svg",
+      img: `${import.meta.env.BASE_URL}/domaci.svg`,
       text: "Domácí a osobní spotřebiče",
     },
     {
       id: 10,
-      img: "src/icons/kuchen.webp",
+      img: `${import.meta.env.BASE_URL}/kuchen.webp`,
       text: "Kuchyňské a domácí potřeby",
     },
     {
       id: 11,
-      img: "src/icons/dum.webp",
+      img: `${import.meta.env.BASE_URL}/dum.webp`,
       text: "Dům, dílna a zahrada",
     },
     {
       id: 12,
-      img: "src/icons/chity.webp",
+      img: `${import.meta.env.BASE_URL}/chity.webp`,
       text: "Chytrá domácnost",
     },
     {
       id: 13,
-      img: "src/icons/drogerie.svg",
+      img: `${import.meta.env.BASE_URL}/drogerie.svg`,
       text: "Drogerie",
     },
     {
       id: 14,
-      img: "src/icons/kosmetika.svg",
+      img: `${import.meta.env.BASE_URL}/kosmetika.svg`,
       text: "Kosmetika, parfémy a krása",
     },
     {
       id: 15,
-      img: "src/icons/chovatelske-potreby.svg",
+      img: `${import.meta.env.BASE_URL}/chovatelske-potreby.svg`,
       text: "Chovatelské potřeby",
     },
     {
       id: 16,
-      img: "src/icons/sport.svg",
+      img: `${import.meta.env.BASE_URL}/sport.svg`,
       text: "Sport a outdoor",
     },
     {
       id: 17,
-      img: "src/icons/auto-moto.svg",
+      img: `${import.meta.env.BASE_URL}/auto-moto.svg`,
       text: "Auto-moto",
     },
     {
       id: 18,
-      img: "src/icons/kancelar.svg",
+      img: `${import.meta.env.BASE_URL}/kancelar.svg`,
       text: "Kancelář a papírnictví",
     },
     {
       id: 19,
-      img: "src/icons/media.svg",
+      img: `${import.meta.env.BASE_URL}/media.svg`,
       text: "Knihy, hudba, filmy a poukazy",
     },
     {
       id: 20,
-      img: "src/icons/potraviny.webp",
+      img: `${import.meta.env.BASE_URL}/potraviny.webp`,
       text: "Potraviny a nápoje",
     },
     {
       id: 21,
-      img: "src/icons/zdaravi.webp",
+      img: `${import.meta.env.BASE_URL}/zdaravi.webp`,
       text: "Lékárna a zdraví",
     },
     {
       id: 22,
-      img: "src/icons/alza.webp",
+      img: `${import.meta.env.BASE_URL}/alza.webp`,
       text: "AlzaPlus+ slevy",
     },
   ],
