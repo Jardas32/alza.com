@@ -1,13 +1,14 @@
 import "../css/oblibene.css";
 import { useCart } from "../components/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
+import { MdDeleteForever } from "react-icons/md";
 
 function Oblibene() {
   const {
     oblibene,
     quantityMainus,
     quantityPlus,
-    deleteProductCart,
+    deleteProductOblibene,
     handleAddtoCart,
     inCart,
   } = useCart();
@@ -61,15 +62,26 @@ function Oblibene() {
               })}
             </div>
 
-            <button
-              onClick={() => {
-                handleAddtoCart(product.id);
-                inCart(product.id);
-              }}
-              className="btn-delete-oblibene"
-            >
-              <FaShoppingCart />
-            </button>
+            <div className="wrapper-delete-addcart">
+              <button
+                onClick={() => {
+                  handleAddtoCart(product.id);
+                  inCart(product.id);
+                }}
+                className="btn-oblibene-addcart"
+              >
+                <FaShoppingCart />
+              </button>
+
+              <button
+                onClick={() => {
+                  deleteProductOblibene(product.id);
+                }}
+                className="btn-delete-oblibene"
+              >
+                <MdDeleteForever />
+              </button>
+            </div>
           </div>
         ))}
       </div>

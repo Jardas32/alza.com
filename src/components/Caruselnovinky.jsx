@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "../css/caruselnovinky.css";
 import { useCart } from "./CartContext";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Caruselnovinky({ products }) {
   const [index, setIndex] = useState(0);
@@ -10,6 +10,7 @@ function Caruselnovinky({ products }) {
   const [width, setWidth] = useState(0);
   const containerRef = useRef(null);
   const { cart, handleAddtoCart, handleInfoProduct } = useCart();
+  const { categories, category, selectcategory } = useParams();
 
   useEffect(() => {
     function update() {
@@ -63,7 +64,13 @@ function Caruselnovinky({ products }) {
       <div style={{ transform: `translateX(${index}px)` }} className="slider">
         {products.map((product) => (
           <div key={product.id} className="wrapper-carusel-card">
-            <Link to="/infoproduct">
+            <Link
+              to={`/${encodeURIComponent(categories)}/${encodeURIComponent(
+                category
+              )}/${encodeURIComponent(selectcategory)}/${encodeURIComponent(
+                product.title
+              )}`}
+            >
               <div
                 onClick={() => handleInfoProduct(product)}
                 className="wrapper-bg-img"
@@ -86,7 +93,7 @@ function Caruselnovinky({ products }) {
             </div>
             {!cart.find((p) => p.id == product.id) ? (
               <button
-                onClick={() => handleAddtoCart(product.id)}
+                onClick={() => handleAddtoCart(product)}
                 className="btn-add-cart"
               >
                 <img

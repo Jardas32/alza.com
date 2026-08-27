@@ -18,6 +18,12 @@ export const allProducts = {
     },
     {
       id: 3,
+      titledescription: "Lenovo tablety novinky",
+      desc: "Ať už pracujete, studujete nebo se bavíte, tablety Lenovo spojují spolehlivý výkon, dokonalý displej a dlouhou výdrž baterie do jednoho atraktivního celku. Který Lenovo tablet je pro vás ten pravý? Abychom vám usnadnili výběr, srovnáme všestrannou řadu Tab s unikátní sérií Yoga, projdeme klíčové parametry a ukážeme, kdy se vyplatí pořídit tablet Lenovo s tužkou či klávesnicí. Najděte s námi ideálního společníka, který se vám přizpůsobí.",
+      banner: "./bannerLenovoTablety.png",
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Tablety",
+      category: "Lenovo",
       img: `${import.meta.env.BASE_URL}/NT210n2i.webp`,
       title: "Lenovo Idea Tab 11 WiFi 8GB/256GB Luna Grey",
       quantity: 1,
@@ -74,6 +80,12 @@ export const allProducts = {
     },
     {
       id: 10,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "iPhone",
+      titledescription: "iPhone novinky",
+      desc: "Mobilní telefony iPhone si zakládají na designu, jednoduchosti, funkčnosti a optimalizaci softwaru. Operační systém iOS je precizně odladěný a dostane z hardwaru telefonu maximum. Hlavními taháky jsou vynikající fotoaparáty, Retina displeje, čipy Apple Silicon a bezproblémová synchronizace s ostatními zařízeními Apple. Díky tomu se mobily Apple iPhone drží na předních příčkách i několik let po vydání. Jak vybrat ten pravý model? ",
+      banner: "./bannerIphone.webp",
       img: `${import.meta.env.BASE_URL}/RI055b2.webp`,
       title: "iPhone 17 Pro 256GB kosmicky oranžová",
       quantity: 1,
@@ -90,6 +102,12 @@ export const allProducts = {
     },
     {
       id: 12,
+      titledescription: "iPad novinky",
+      desc: "iPad je elegantní zařízení podobné tabletu patřící do rodiny přenosných zařízení Apple. Chlubí se vyladěným operačním systémem, prvotřídním zpracováním, výkonným čipem Apple a skvělou funkční výbavou. Elegantní, multifunkční, vyladěný nástroj pro úlohy AI spojený s ekosystémem Apple, iPad zůstává jedním z nejpopulárnějších a nejlepších tabletů na trhu. Který z nich bude ten pravý pro vás? Čtěte dále.",
+      banner: "./banneriPad.webp",
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Tablety",
+      category: "iPad",
       img: `${import.meta.env.BASE_URL}/NL238s4z1a.webp`,
       title: "iPad Pro M5 13 256GB vesmírně černá 2025",
       quantity: 1,
@@ -98,6 +116,9 @@ export const allProducts = {
     },
     {
       id: 13,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "iPhone",
       img: `${import.meta.env.BASE_URL}/RI057b4.webp`,
       title: "iPhone Air 256GB blankytně modrá",
       quantity: 1,
@@ -122,6 +143,9 @@ export const allProducts = {
     },
     {
       id: 16,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "iPhone",
       img: `${import.meta.env.BASE_URL}/RI056b3-01.webp`,
       title: "iPhone 17 Pro Max 256GB temně modrá",
       quantity: 1,
@@ -192,6 +216,167 @@ export const allProducts = {
       skladem: 6,
       price: 239,
     },
+    {
+      id: 25,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Samsung",
+      titledescription: "Samsung novinky",
+      desc: "Pořiď si mobilní telefon řady Galaxy Z Fold8 Ultra, Z Fold8, Z Flip8, nebo hodinky Galaxy Watch Ultra2 či Galaxy Watch9 a získej mnoho výhod.",
+      banner: "./bannerSamsung.webp",
+      img: "./mobilSamsung.webp",
+      title: "Samsung Galaxy S25 FE 8GB/128GB Navy",
+      rating: 5,
+      quantity: 1,
+      price: 16655,
+    },
+    {
+      id: 26,
+      titledescription: "Google Pixel – budoucnost ve vaší dlani",
+      desc: "Google není pouze internetový vyhledávač, ale také výrobce špičkových smartphonů Google Pixel. Ty se vyznačují nejen bezkonkurenčním provedením a precizním fotoaparátem, ale i vysokým důrazem na design a společně vyladěný software i hardware. Čistý operační systém Android, 7letá softwarová podpora a pravidelné balíčky nových funkcí dělají z každé modelové řady špičkový telefon. Google Pixel je také branou k celému ekosystému Google funkcí a nově také k umělé inteligenci od Googlu.",
+      banner: "./bannerGoogle.jpg",
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Google",
+      img: "./mobilGooglepixel.webp",
+      title: "Google Pixel 10a 256GB Obsidian",
+      rating: 4,
+      quantity: 1,
+      price: 14940,
+    },
+    {
+      id: 27,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Samsung",
+      img: "./mobilSamsung.webp",
+      title: "Samsung Galaxy S25 FE 8GB/128GB Navy",
+      rating: 5,
+      quantity: 1,
+      price: 16655,
+    },
+    {
+      id: 28,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Google",
+      img: "./mobilGooglepixel.webp",
+      title: "Google Pixel 10a 256GB Obsidian",
+      rating: 4,
+      quantity: 1,
+      price: 14940,
+    },
+    {
+      id: 29,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Samsung",
+      img: "./mobilSamsung.webp",
+      title: "Samsung Galaxy S25 FE 8GB/128GB Navy",
+      rating: 5,
+      quantity: 1,
+      price: 16655,
+    },
+    {
+      id: 30,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Google",
+      img: "./mobilGooglepixel.webp",
+      title: "Google Pixel 10a 256GB Obsidian",
+      rating: 4,
+      quantity: 1,
+      price: 14940,
+    },
+    {
+      id: 31,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Xiaomi",
+      titledescription: "Xiaomi – mobilní telefony pro milovníky technologií",
+      desc: "Čínská společnost Xiaomi se z ambiciózního start-upu vypracovala v technologického giganta a jednoho z nejúspěšnějších výrobců smartphonů na světě. Agresivní cenová politika, neokoukané nápady, odvaha zkoušet nové věci – to jsou vlastnosti, které proslavily značku Xiaomi i u nás. Společnost dnes nabízí chytré telefony všech druhů. Od nekompromisních vlajkových lodí přes střední třídu se skvělým poměrem ceny a výkonu až po dostupné varianty, které jsou skvělou volbou nenáročných uživatelů. Prozkoumejte s námi bohatou nabídku smartphonů Xiaomi.",
+      banner: "./bannerXiaomi.jpg",
+      img: "./xiaomi17T.webp",
+      title: "Xiaomi 17T 12GB/256GB Black",
+      description:
+        "Mobilní telefon - 6,59`` P-OLED 2756 ×1268 (120Hz), úložiště: 256 GB, RAM: 12 GB, fotoaparát: 50Mpx (f/1,7) hlavní + 12Mpx širokoúhlý + 50Mpx teleobjektiv + 32Mpx přední, CPU: MediaTek Dimensity 8500 Ultra, NFC, USB-C, 5G, Dual SIM + eSIM, čtečka otisků, voděodolný dle IP68, rychlé nabíjení 67W, baterie 6500 mAh, model 2026, Android",
+      rating: 5,
+      quantity: 1,
+      skladem: 6,
+      price: 13990,
+    },
+    {
+      id: 32,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Xiaomi",
+      img: "./xiaomi15.webp",
+      title: "Xiaomi Redmi Note 15 Pro+ 5G 12GB/512GB Glacier Blue",
+      description:
+        "Mobilní telefon - 6,83`` P-OLED 2772 × 1280 (120Hz), úložiště: 512 GB, RAM: 12 GB, fotoaparát: 200Mpx (f/1,7) hlavní + 8Mpx širokoúhlý + 32Mpx přední, CPU: Qualcomm Snapdragon 7s Gen 4, NFC, USB-C, dual SIM, čtečka otisků, voděodolný dle IP68, rychlé nabíjení 100W, baterie 6500 mAh, model 2026, Android",
+      rating: 4,
+      quantity: 1,
+      skladem: 4,
+      price: 8990,
+    },
+    {
+      id: 33,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Xiaomi",
+      img: "./xiaomi1.webp",
+      title: "Xiaomi Redmi 15 8GB/256GB Midnight Black",
+      description:
+        "Mobilní telefon - 6,9`` IPS 2340 × 1080 (144Hz), úložiště: 256 GB, RAM: 8 GB, fotoaparát: 50Mpx (f/1,8) hlavní + 8Mpx přední, CPU: Qualcomm Snapdragon 685, NFC, USB-C, hybridní slot, čtečka otisků, voděodolný dle IP64, rychlé nabíjení, baterie 7000 mAh, model 2025, Android",
+      rating: 4,
+      quantity: 1,
+      skladem: 9,
+      price: 4190,
+    },
+    {
+      id: 34,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Xiaomi",
+      img: "./xiaomiLeica.webp",
+      title: "Leica Leitzphone powered by Xiaomi Black 16GB/1TB",
+      description:
+        "Mobilní telefon - 6,9`` AMOLED 2608 × 1200 (120Hz), úložiště: 1 TB, RAM: 16 GB a více, fotoaparát: 50Mpx (f/1,67) hlavní + 50Mpx širokoúhlý + 200Mpx teleobjektiv + 50Mpx přední, CPU: Qualcomm Snapdragon 8 Elite Gen 5, NFC, USB-C, 5G, dual SIM, voděodolný dle IP68, rychlé nabíjení 90W, baterie 6000 mAh, model 2026, Android",
+      rating: 5,
+      quantity: 1,
+      skladem: 5,
+      price: 35590,
+    },
+    {
+      id: 35,
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Mobilní telefony",
+      category: "Xiaomi",
+      img: "./xiaomi17Pro.webp",
+      title: "Xiaomi 17T Pro 12GB/256GB Deep Violet",
+      description:
+        "Mobilní telefon - 6,83`` P-OLED 2772 × 1280 (144Hz), úložiště: 256 GB, RAM: 12 GB, fotoaparát: 50Mpx (f/1,67) hlavní + 12Mpx širokoúhlý + 50Mpx teleobjektiv + 32Mpx přední, CPU: MediaTek Dimensity 9500, NFC, USB-C, 5G, Dual SIM + eSIM, čtečka otisků, voděodolný dle IP68, rychlé nabíjení 100W, bezdrátové nabíjení 50W, baterie 7000 mAh, model 2026, Android",
+      rating: 3,
+      quantity: 1,
+      skladem: 8,
+      price: 17990,
+    },
+    {
+      id: 36,
+      titledescription: "Tablety Samsung: vaše pravá ruka pro práci i zábavu",
+      desc: "Tablety Samsung dokazují, že špičkové technologie a elegantní design patří k sobě. Kombinují špičkový výkon, brilantní displeje a promyšlené funkce, které usnadní každý den, a to ať už pracujete, tvoříte nebo jen relaxujete. Díky prémiové řadě Galaxy Tab S získáte výjimečný obraz i zvuk, plynulý multitasking a stylový design, který se hodí do každé tašky i kanceláře.",
+      banner: "./bannerTabletSamsung.jpg",
+      allcategories: "Mobily, chytré hodinky, tablety",
+      categories: "Tablety",
+      category: "Samsung",
+      img: `${import.meta.env.BASE_URL}/tabletSamsung.webp`,
+      title: "Samsung Galaxy Tab S10 FE+ 8GB/128GB Gray",
+      description:
+        "Tablet - displej 13,1`` 2880 × 1800 IPS, úložiště: 128 GB, RAM: 8 GB, paměťová karta až 2048 GB, WiFi, Bluetooth, GPS, Exynos 1580 2,9 GHz, zadní fotoaparát 13 Mpx (f/2), přední fotoaparát 12 Mpx (f/2,4), odolný dle IP68, USB-C, čtečka otisků prstů, podpora aktivního stylusu, stylus součástí balení, 45W rychlé nabíjení, baterie 10090 mAh",
+      quantity: 1,
+      skladem: 4,
+      price: 15990,
+    },
   ],
   category: [
     {
@@ -212,7 +397,7 @@ export const allProducts = {
     {
       id: 4,
       img: `${import.meta.env.BASE_URL}/pocitace.svg`,
-      text: "Počítače notebooky",
+      text: "Počítače a notebooky",
     },
     {
       id: 5,
@@ -305,4 +490,237 @@ export const allProducts = {
       text: "AlzaPlus+ slevy",
     },
   ],
+};
+
+export const categoryData = [
+  {
+    id: 1,
+    name: "počítače a notebooky",
+    categories: [
+      {
+        categoryname: "Notebooky",
+        img: "./icon-notebook.webp",
+        znacky: [
+          {
+            id: 1,
+            name: "Asus",
+            img: "./icon-asus.webp",
+          },
+          {
+            id: 2,
+            name: "Lenovo",
+            img: "./icon-lenovo.webp",
+          },
+          {
+            id: 3,
+            name: "Msi",
+            img: "./icon-msi.webp",
+          },
+          {
+            id: 4,
+            name: "Herní",
+            img: "./icon-herni.webp",
+          },
+        ],
+      },
+      {
+        categoryname: "Počítače",
+        img: "./icon-pocitace.webp",
+        znacky: [
+          {
+            id: 1,
+            name: "Mini",
+            img: "./icon-minipc.webp",
+          },
+          {
+            id: 2,
+            name: "Herní",
+            img: "./icon-herni.webp",
+          },
+          {
+            id: 3,
+            name: "Stolní",
+            img: "./icon-stolni.webp",
+          },
+          {
+            id: 4,
+            name: "AlzaPC",
+            img: "./icon-alzapc.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "mobily, chytré hodinky, tablety",
+    categories: [
+      {
+        categoryname: "Mobilní telefony",
+        img: "./icon-mobilnetelefony.webp",
+        znacky: [
+          {
+            id: 1,
+            name: "Xiaomi",
+            img: "./icon-mobilxiaomi.webp",
+          },
+          {
+            id: 2,
+            name: "Samsung",
+            img: "./icon-mobilsamsung.webp",
+          },
+          {
+            id: 3,
+            name: "IPhone",
+            img: "./icon-mobiliphone.webp",
+          },
+        ],
+      },
+      {
+        categoryname: "Chytré hodinky",
+        img: "./icon-chytrehodinky.webp",
+        znacky: [
+          {
+            id: 1,
+            name: "Apple Watch",
+            img: "./icon-applewatch.webp",
+          },
+          {
+            id: 2,
+            name: "Xiaomi",
+            img: "./icon-chodinkyxiaomi.webp",
+          },
+          {
+            id: 3,
+            name: "Samsung",
+            img: "./icon-chodinkysamsung.webp",
+          },
+          {
+            id: 4,
+            name: "Pánské",
+            img: "./icon-chodinkypanske.webp",
+          },
+          {
+            id: 5,
+            name: "Dámské",
+            img: "./icon-chodinkydamske.webp",
+          },
+        ],
+      },
+      {
+        categoryname: "Tablety",
+        img: "./icon-tablety.webp",
+        znacky: [
+          {
+            id: 1,
+            name: "iPad",
+            img: "./icon-ipad.webp",
+          },
+          // {
+          //   id: 2,
+          //   name: "Android",
+          //   img: "./icon-ipadandroid.webp",
+          // },
+          {
+            id: 3,
+            name: "Samsung",
+            img: "./icon-ipadsamsung.webp",
+          },
+          {
+            id: 4,
+            name: "Lenovo",
+            img: "./icon-ipadlenovo.webp",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const vykupMobilu = [
+  {
+    id: 1,
+    icon: "./usp-1.svg",
+    text: "Vykupujeme i zařízení zakoupené jinde",
+  },
+  {
+    id: 2,
+    icon: "./usp-2.svg",
+    text: "Pošli staré zařízení AlzaBoxem 24/7",
+  },
+  {
+    id: 3,
+    icon: "./usp-3.svg",
+    text: "Peníze rovnou na tvůj účet",
+  },
+];
+
+// sort
+export const sorted = [
+  {
+    id: 1,
+    name: "Doporučujeme",
+  },
+  {
+    id: 2,
+    name: "Nejlevnější",
+  },
+  {
+    id: 3,
+    name: "Nejdražší",
+  },
+];
+
+// prihlasi se
+export const prihlasitse = {
+  leftPrihlaseni: [
+    {
+      id: 1,
+      name: "Přihlásit se",
+      svg: "./pri1.svg",
+    },
+    {
+      id: 2,
+      name: "Objednávky",
+      svg: "./pri2.svg",
+    },
+    {
+      id: 3,
+      name: "Reklamace",
+      svg: "./reklamace.png",
+    },
+    {
+      id: 4,
+      name: "Výkup elektroniky",
+      svg: "./výkupelektroniky.png",
+    },
+    {
+      id: 5,
+      name: "Můj účet",
+      svg: "./pri5.svg",
+    },
+    {
+      id: 6,
+      name: "Porovnání",
+      svg: "./porovnani.png",
+    },
+    {
+      id: 7,
+      name: "Moje knihovna",
+      svg: "./register.png",
+    },
+    {
+      id: 8,
+      name: "Potřebuji poradit",
+      svg: "./message.png",
+    },
+  ],
+  rightPrihlaseni: {
+    icon: "./blue-user-icon.svg",
+    textVyhody: "Přihlaste se a získáte spoustu výhod",
+    podrobnosti:
+      "Podrobnosti o stavu a termínu, faktury, seznam zakoupeného zboží apod.",
+    prihlasitse: "Přihlásit se",
+    noveRegistrace: "Nová registrace",
+  },
 };

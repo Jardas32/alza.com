@@ -1,12 +1,14 @@
 import "../css/infoproduct.css";
 import { useCart } from "../components/CartContext";
 import { useState } from "react";
-import Footer from "../components/Footer";
+import { useParams } from "react-router-dom";
+import BackeLink from "../components/BackeLink";
 
 function Infoproduct() {
   const { infoproduct } = useCart();
   const [open, setOpen] = useState(false);
-  const { handleAddOblibene } = useCart();
+  const { handleAddOblibene, handleAddtoCart } = useCart();
+  const { categories, category, selectcategory, title } = useParams();
 
   const arrStars = [
     {
@@ -32,7 +34,32 @@ function Infoproduct() {
   ];
 
   return (
-    <>
+    <div className="wrapper-backelink-top">
+      {categories !== "undefined" && (
+        <BackeLink
+          items={[
+            {
+              path: "/",
+            },
+            {
+              name: `${categories}`,
+              path: `/${categories}`,
+            },
+            {
+              name: `${category}`,
+              path: `/${categories}/${category}`,
+            },
+            {
+              name: `${selectcategory}`,
+              path: `/${categories}/${category}/${selectcategory}`,
+            },
+            {
+              name: `${title}`,
+            },
+          ]}
+        />
+      )}
+
       <div className="wrapper-infoproduct-bg">
         <div className="wrapper-info-left">
           <img
@@ -136,11 +163,11 @@ function Infoproduct() {
             <div className="wrapper-select-btn">
               <div className="btn-select">
                 <p>Nový</p>
-                <p>2 990,-</p>
+                <p>{infoproduct.price.toLocaleString()},-</p>
               </div>
               <div className="btn-select">
                 <p>Zánovní</p>
-                <p>2 929,-</p>
+                <p>{Math.floor(infoproduct.price * 0.99).toLocaleString()},-</p>
               </div>
             </div>
             <div className="wrapper-checkbox-bg">
@@ -203,8 +230,12 @@ function Infoproduct() {
             </div>
             <div className="wrapper-btn-add-cart">
               <div className="wrapper-btn-add-cart-left">
-                <p className="price-left">2 990,-</p>
-                <p className="text-dph">bez DPH 2 471,-</p>
+                <p className="price-left">
+                  {infoproduct.price.toLocaleString()},-
+                </p>
+                <p className="text-dph">
+                  bez DPH {Math.floor(infoproduct.price * 0.83)},-
+                </p>
                 <div className="wrapper-garance">
                   <img
                     src="./high-quality.png"
@@ -217,10 +248,7 @@ function Infoproduct() {
               </div>
               <div className="wrapper-btn-add-cart-left">
                 <p className="price-right">
-                  <img
-                    src="./home_credit_compact.svg"
-                    alt="img-home"
-                  />
+                  <img src="./home_credit_compact.svg" alt="img-home" />
                   Home Credit AKCE
                 </p>
                 <div className="text-urok">
@@ -233,7 +261,7 @@ function Infoproduct() {
                   <span>Koupit na splátky</span>
                 </div>
                 <button
-                  onClick={() => handleAddtoCart(infoproduct.id)}
+                  onClick={() => handleAddtoCart(infoproduct)}
                   className="btn-add-cart-alzabox-right"
                 >
                   Do košíku
@@ -255,7 +283,7 @@ function Infoproduct() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

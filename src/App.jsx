@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Registration from "./pages/Registration";
 import Objednavky from "./pages/Objednavky";
 import Oblibene from "./pages/Oblibene";
 import Cart from "./pages/Cart";
@@ -10,6 +11,9 @@ import Menufooter from "./components/Menufooter";
 import Katalog from "./pages/Katalog";
 import Menu from "./pages/Menu";
 import Infoproduct from "./pages/Infoproduct";
+import CategoriePage from "./pages/CategoriePage";
+import CategoryProduct from "./pages/CategoryProduct";
+import SelectCategoryPage from "./pages/SelectCategoryPage";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,17 +23,28 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:categories" element={<CategoriePage />} />
+        <Route path="/:categories/:category" element={<CategoryProduct />} />
+        <Route
+          path="/:categories/:category/:selectcategory"
+          element={<SelectCategoryPage />}
+        />
+        <Route
+          path="/:categories/:category/:selectcategory/:title"
+          element={<Infoproduct />}
+        />
+
         <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
         <Route path="/objednavky" element={<Objednavky />} />
         <Route path="/oblibene" element={<Oblibene />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/katalog" element={<Katalog />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/infoproduct" element={<Infoproduct />} />
       </Routes>
 
       <Menufooter />
-      
+
       <Footer />
     </HashRouter>
   );

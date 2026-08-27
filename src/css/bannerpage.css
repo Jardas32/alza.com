@@ -1,0 +1,38 @@
+.wrapper-bannerpage {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgb(230, 230, 230);
+}
+
+.wrapper-bannerpage-img {
+  width: 100%;
+  aspect-ratio: 4 / 1;
+}
+
+.banner-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .wrapper-bannerpage {
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper-bannerpage {
+    min-height: 180px;
+    border-radius: 10px;
+  }
+
+  .wrapper-bannerpage-img {
+    aspect-ratio: none;
+  }
+}

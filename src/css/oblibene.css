@@ -121,7 +121,15 @@
   font-weight: 500;
 }
 
-.btn-delete-oblibene {
+.wrapper-delete-addcart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-delete-oblibene,
+.btn-oblibene-addcart {
   background-color: #ffffff;
   color: #6dbb2c;
   transition: all 0.3s ease;
@@ -137,11 +145,28 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.225);
 }
 
+.btn-delete-oblibene {
+  color: rgba(255, 0, 0, 0.572);
+  font-size: 22px;
+}
+
+.btn-delete-oblibene:hover {
+  color: red;
+}
+
 .btn-delete-oblibene:hover {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.415);
 }
 
+.btn-oblibene-addcart:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.415);
+}
+
 @media (max-width: 478px) {
+  .wrapper-oblibene-bg {
+    padding: 20px 10px;
+  }
+
   .oblibene-card {
     position: relative;
     height: 130px;

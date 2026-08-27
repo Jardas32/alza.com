@@ -1,0 +1,72 @@
+.wrapper-vykupmobilu {
+  background-image: linear-gradient(
+    to bottom,
+    #164194 0%,
+    rgb(57, 50.5, 139.5) 60%,
+    #5c2483 100%
+  );
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+}
+
+.left-text {
+  text-align: center;
+  color: #ffff;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.left-text strong {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.wrapper-vykupmobilu-grids {
+  max-width: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vykup-card {
+  max-width: 136px;
+  width: 100%;
+  text-align: center;
+}
+
+.vykup-desc {
+  text-align: center;
+  color: #ffff;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  line-height: 16px;
+}
+
+.btn-vice {
+  transition: all 0.3s;
+  background-color: #dce9ff;
+  color: #164194;
+  cursor: pointer;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.btn-vice:hover {
+  background-color: #cadaf7;
+}
+
+@media (max-width: 1071px) {
+  .wrapper-vykupmobilu {
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+}

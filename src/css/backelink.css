@@ -1,0 +1,66 @@
+.wrapper-backelink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.wrapper-backelonk-scroll {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.wrapper-backelonk-scroll::-webkit-scrollbar {
+  background-color: transparent;
+  height: 3px;
+}
+
+.wrapper-backelonk-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.wrapper-backelonk-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.backelink-home {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.page-link {
+  color: var(--color);
+  font-size: 13px;
+  font-family: var(--fontfamaly);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page-link.active {
+  color: rgb(88, 88, 88);
+}
+
+@media (max-width: 490px) {
+  .wrapper-backelink {
+    gap: 5px;
+  }
+
+  .page-link {
+    font-size: 12px;
+    gap: 5px;
+  }
+}

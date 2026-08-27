@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useCart } from "./CartContext";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Carusel({ products }) {
   const [index, setIndex] = useState(0);
@@ -9,6 +9,7 @@ export default function Carusel({ products }) {
   const [width, setWidth] = useState(0);
   const containerRef = useRef(null);
   const { handleInfoProduct } = useCart();
+  const { categories, category, selectcategory } = useParams();
 
   useEffect(() => {
     function update() {
@@ -62,7 +63,13 @@ export default function Carusel({ products }) {
       <div style={{ transform: `translateX(${index}px)` }} className="slider">
         {products.map((product) => (
           <div key={product.id} className="wrapper-carusel-card">
-            <Link to="/infoproduct">
+            <Link
+              to={`/${encodeURIComponent(
+                product.allcategories
+              )}/${encodeURIComponent(product.categories)}/${encodeURIComponent(
+                product.category
+              )}/${encodeURIComponent(product.title)}`}
+            >
               <div
                 onClick={() => handleInfoProduct(product)}
                 className="wrapper-bg-img"

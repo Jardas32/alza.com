@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "../css/caruselappleproducts.css";
 import { useCart } from "../components/CartContext";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Caruselappleproducts({ products }) {
   const [index, setIndex] = useState(0);
@@ -10,6 +10,7 @@ export default function Caruselappleproducts({ products }) {
   const [width, setWidth] = useState(0);
   const containerRef = useRef(null);
   const { cart, handleAddtoCart, handleInfoProduct } = useCart();
+  const { categories, category, selectcategory } = useParams();
 
   useEffect(() => {
     function update() {
@@ -52,7 +53,6 @@ export default function Caruselappleproducts({ products }) {
     });
   };
 
-
   return (
     <div ref={containerRef} className="wrapper-carusel">
       {showLeft && (
@@ -65,7 +65,13 @@ export default function Caruselappleproducts({ products }) {
       <div style={{ transform: `translateX(${index}px)` }} className="slider">
         {products.map((product) => (
           <div key={product.id} className="wrapper-carusel-card">
-            <Link to="/infoproduct">
+            <Link
+              to={`/${encodeURIComponent(
+                product.allcategories
+              )}/${encodeURIComponent(product.categories)}/${encodeURIComponent(
+                product.category
+              )}/${encodeURIComponent(product.title)}`}
+            >
               <div
                 onClick={() => handleInfoProduct(product)}
                 className="wrapper-bg-img"
@@ -105,7 +111,7 @@ export default function Caruselappleproducts({ products }) {
             </div>
             {!cart.find((p) => p.id == product.id) ? (
               <button
-                onClick={() => handleAddtoCart(product.id)}
+                onClick={() => handleAddtoCart(product)}
                 className="btn-add-cart"
               >
                 <img

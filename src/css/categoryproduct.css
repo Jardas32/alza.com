@@ -1,0 +1,67 @@
+:root {
+  --color: #25516b;
+  --fontfamaly: "Roboto", sans-serif;
+  --backgroundLi: linear-gradient(to right, rgb(232, 243, 255), #fff);
+}
+
+.wrapper-category-brand {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 30px;
+}
+
+.wrapper-category-brand h2 {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: start;
+  font-family: var(--fontfamaly);
+  font-weight: bold;
+}
+
+.description-mobily {
+  margin-top: 5px;
+  color: #000000;
+  font-size: 16px;
+  font-family: var(--fontfamaly);
+  line-height: 24px;
+}
+
+.wrapper-brand-grids {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.card-brand {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgb(232, 242, 255);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 6px 16px;
+  text-decoration: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.141);
+}
+
+.card-brand:hover {
+  background-color: rgb(220, 234, 255);
+}
+
+.icon-category {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.category-name {
+  color: black;
+  font-size: 14px;
+  font-family: var(--fontfamaly);
+  font-weight: 500;
+}

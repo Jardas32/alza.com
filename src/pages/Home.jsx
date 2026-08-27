@@ -1,11 +1,11 @@
 import "../css/home.css";
+import { Link } from "react-router-dom";
 import Carusel from "../components/Caruselnejleosi";
 import Caruselappleproducts from "../components/Caruselappleproducts";
 import Caruselnovinky from "../components/Caruselnovinky";
 import Novinky from "../components/Novinky";
 import Caruselznacky from "../components/Caruselznacky";
 import Znacky from "../components/Znacky";
-import Footer from "../components/Footer";
 import { useCart } from "../components/CartContext";
 
 function Home() {
@@ -50,9 +50,12 @@ function Home() {
                 <span>
                   <img src={item.img} alt="icon" />
                 </span>
-                <a className="category-icon" href="#">
+                <Link
+                  to={`/${encodeURIComponent(item.text)}`}
+                  className="category-icon"
+                >
                   {item.text}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

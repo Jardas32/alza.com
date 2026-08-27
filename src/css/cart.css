@@ -353,8 +353,10 @@ table {
 }
 
 @media (max-width: 753px) {
+  
   .wrapper-cart-bg {
     margin-top: 50px;
+    height: auto;
   }
 
   .product-title {
@@ -374,6 +376,8 @@ table {
     height: 30px;
     line-height: 17px;
   }
+
+  
 }
 
 @media (max-width: 478px) {
@@ -464,5 +468,9 @@ table {
 
   .img-icon {
     width: 24px;
+  }
+
+  .wrapper-cart-bottom {
+    padding: 4px 10px 0 10px;
   }
 }

@@ -2,10 +2,12 @@ import "../css/header.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useCart } from "../components/CartContext";
+import { IoIosArrowDown } from "react-icons/io";
+import { prihlasitse } from "../data/data";
 
 function Header() {
   const [openSearch, setOpenSearch] = useState(false);
-  const { cart } = useCart();
+  const [openLogin, setOpenLogin] = useState(false);
   const { totalProduct } = useCart();
 
   return (
@@ -19,20 +21,57 @@ function Header() {
         <button className="btn-clear-input">X</button>
         <button className="btn-search">Hledat</button>
       </div>
-      <div className="wrapper-prihlaseni">
+
+      <div
+        onClick={() => setOpenLogin((open) => !open)}
+        className="wrapper-prihlaseni"
+      >
         <img src="./user.png" alt="img-login" className="img-login" />
         <p className="text-prihlaseni">
           <span>Moje Alza</span>
-          <Link className="login-link" to="/login">
-            Prihlasit se
-          </Link>
+          <span>Prihlasit se</span>
         </p>
-        <img
-          src="./down-chevron.png"
-          alt="arrow-down"
-          className="img-arrow-down"
+
+        <IoIosArrowDown
+          className={`img-arrow-down ${openLogin ? "active" : ""}`}
         />
       </div>
+
+      <div className={`wrapper-prihlaseni-acount ${openLogin ? "active" : ""}`}>
+        <div className="wrapper-prihlaseni-left">
+          {prihlasitse.leftPrihlaseni.map((pri) => (
+            <div key={pri.id} className="card-prihlaseni">
+              <Link className="card-prihlaseni-link">
+                <img
+                  width={20}
+                  height={20}
+                  className="svg-prihlaseni"
+                  src={pri.svg}
+                  alt="svg"
+                />
+                <span>{pri.name}</span>
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div className="wrapper-prihlaseni-right">
+          {prihlasitse?.rightPrihlaseni && (
+            <>
+              <img src={prihlasitse.rightPrihlaseni.icon} alt="icon-blue" />
+
+              <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
+              <p>{prihlasitse.rightPrihlaseni.podrobnosti}</p>
+
+              <Link to="/login">{prihlasitse.rightPrihlaseni.prihlasitse}</Link>
+              <Link to="/registration">
+                {prihlasitse.rightPrihlaseni.noveRegistrace}
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
+
       <div className="wrapper-navigation">
         <div className="wrapper-open-search">
           {!openSearch && (
