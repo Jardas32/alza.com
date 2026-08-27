@@ -7,9 +7,9 @@ import Registration from "./pages/Registration";
 import Objednavky from "./pages/Objednavky";
 import Oblibene from "./pages/Oblibene";
 import Cart from "./pages/Cart";
-import Menufooter from "./components/Menufooter";
+import MenuFooter from "./components/Menufooter";
 import Katalog from "./pages/Katalog";
-import Menu from "./pages/Menu";
+import MenuPage from "./pages/MenuPage";
 import Infoproduct from "./pages/Infoproduct";
 import CategoriePage from "./pages/CategoriePage";
 import CategoryProduct from "./pages/CategoryProduct";
@@ -40,10 +40,10 @@ function App() {
         <Route path="/oblibene" element={<Oblibene />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/katalog" element={<Katalog />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu" element={<MenuPage />} />
       </Routes>
 
-      <Menufooter />
+      <MenuFooter />
 
       <Footer />
     </HashRouter>

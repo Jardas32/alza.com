@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color: #25516b;
+  --fontfamaly: "Roboto", sans-serif;
+}
+
 #root {
   /* background-image: linear-gradient(to bottom, #fff, rgb(66, 27, 122), rgb(66, 27, 122)); */
   /* background-image: linear-gradient(to right, rgb(245, 250, 255), #fff); */

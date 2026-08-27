@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "../css/menufooter.css";
-import { useCart } from "../components/CartContext";
+import { useCart } from "./CartContext";
 
-function Menu() {
+function MenuFooter() {
   const { totalProduct } = useCart();
   return (
     <ul className="wrapper-navigation-footer">
@@ -37,4 +37,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default MenuFooter;
