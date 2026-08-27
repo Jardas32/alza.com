@@ -37,13 +37,9 @@ function Header() {
         />
       </div>
 
-      {openLogin && (
-        <div
-          className={`wrapper-prihlaseni-acount ${openLogin ? "active" : ""}`}
-        >
-          <Menu />
-        </div>
-      )}
+      <div className={`wrapper-prihlaseni-acount ${openLogin ? "active" : ""}`}>
+        <Menu />
+      </div>
 
       <div className="wrapper-navigation">
         <div className="wrapper-open-search">
