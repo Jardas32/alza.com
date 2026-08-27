@@ -247,11 +247,28 @@
   .wrapper-footer {
     margin-bottom: 90px;
   }
+  .wrapper-footer-content {
+    justify-content: start;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 692px) {
   .wrapper-images {
     justify-content: center;
     gap: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  .wrapper-soc {
+    width: 100%;
+    align-content: space-between;
+  }
+
+  .wrapper-language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

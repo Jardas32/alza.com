@@ -559,14 +559,19 @@
 }
 
 @media (max-width: 768px) {
+  .wrapper-backelink-top {
+    padding: 10px;
+  }
+
   .wrapper-infoproduct-bg {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     gap: 20px;
   }
 
-  .wrapper-info-left {
-    padding: 10px;
+  .wrapper-info-left,
+  .wrapper-info-right {
+    padding: 0;
   }
 }
 
