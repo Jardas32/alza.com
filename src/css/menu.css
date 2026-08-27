@@ -24,11 +24,8 @@
 
 /* Prihlaseni Footer Menu */
 .wrapper-prihlaseni-footer-acount {
-  margin-top: 60px;
-  background-color: rgb(255, 255, 255);
+  margin-top: 70px;
   width: 100%;
-  /* min-height: 100vh; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -99,4 +96,13 @@
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+
+@media (max-width: 752px) {
+  .wrapper-prihlaseni-footer-acount {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding: 10px;
+  }
 }
