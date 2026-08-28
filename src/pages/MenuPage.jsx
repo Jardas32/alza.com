@@ -85,15 +85,34 @@ function MenuPage() {
       <div className="wrapper-prihlaseni-right">
         {prihlasitse?.rightPrihlaseni && (
           <>
-            <img src={prihlasitse.rightPrihlaseni.icon} alt="icon-blue" />
+            <div className="wrapper-user-left">
+              <div className={`wrapper-user-img ${user ? "active" : ""}`}>
+                <img
+                  className={`icon-user ${user ? "active" : ""}`}
+                  src={user ? user.img : prihlasitse.rightPrihlaseni.icon}
+                  alt="icon-blue"
+                />
+              </div>
 
-            <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
-            <p>{prihlasitse.rightPrihlaseni.podrobnosti}</p>
+              <div className="wrapper-user-info">
+                <h4 className="user-name">{user?.username}</h4>
+                <h5 className="user-email">{user?.email}</h5>
+              </div>
+            </div>
 
-            <Link to="/login">{prihlasitse.rightPrihlaseni.prihlasitse}</Link>
-            <Link to="/registration">
-              {prihlasitse.rightPrihlaseni.noveRegistrace}
-            </Link>
+            {!user && (
+              <>
+                <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
+                <p>{prihlasitse.rightPrihlaseni.podrobnosti}</p>
+
+                <Link to="/login">
+                  {prihlasitse.rightPrihlaseni.prihlasitse}
+                </Link>
+                <Link to="/registration">
+                  {prihlasitse.rightPrihlaseni.noveRegistrace}
+                </Link>
+              </>
+            )}
           </>
         )}
       </div>

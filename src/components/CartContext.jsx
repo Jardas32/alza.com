@@ -25,14 +25,15 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("currentUser", JSON.stringify(user));
-  }, user);
+  }, [user]);
 
   // addUser
   const registration = () => {
     setUser({
       id: new Date().toISOString(),
-      username: "Jarda",
-      emeil: "jaraddjarda@gmail.com",
+      username: "Jarda Dovhopolov",
+      email: "jaraddjarda@gmail.com",
+      img: "./imgProfile.jpg",
     });
   };
 
