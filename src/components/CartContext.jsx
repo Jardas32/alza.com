@@ -17,6 +17,30 @@ export const CartProvider = ({ children }) => {
     return savedOblibene ? JSON.parse(savedOblibene) : [];
   });
 
+  // User
+  const [user, setUser] = useState(() => {
+    const getUser = localStorage.getItem("currentUser");
+    return getUser ? JSON.parse(getUser) : null;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("currentUser", JSON.stringify(user));
+  }, user);
+
+  // addUser
+  const registration = () => {
+    setUser({
+      id: new Date().toISOString(),
+      username: "Jarda",
+      emeil: "jaraddjarda@gmail.com",
+    });
+  };
+
+  const logOut = () => {
+    localStorage.removeItem("currentUser");
+    setUser(null);
+  };
+
   const handleInfoProduct = (product) => {
     setInfoproduct(product);
   };
@@ -178,6 +202,9 @@ export const CartProvider = ({ children }) => {
         inCart,
         selectCategory,
         setSelectCategory,
+        user,
+        registration,
+        logOut,
       }}
     >
       {children}

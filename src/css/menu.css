@@ -72,7 +72,19 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-category-text {
+  display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+.list-category-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .list-category-text {
@@ -82,10 +94,9 @@
   font-weight: 500;
 }
 
-.list-category-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.lock-link {
+  color: rgb(182, 182, 182);
+  font-size: 18px;
 }
 
 .list-li-category:hover .list-category-text {
