@@ -32,6 +32,65 @@
   padding: 20px;
 }
 
+.wrapper-prihlaseni-footer-left {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list-menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-li-category {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.list-title {
+  color: #00619a;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.list-link {
+  color: black;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-category-text {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.list-category-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.list-li-category:hover .list-category-text {
+  color: #0d7dbe;
+}
+
 .card-prihlaseni {
   transition: all 0.3s;
   cursor: pointer;

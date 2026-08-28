@@ -724,3 +724,125 @@ export const prihlasitse = {
     noveRegistrace: "Nová registrace",
   },
 };
+
+export const allDataMenu = {
+  prihlasitse: {
+    icon: "./pri1.svg",
+    text: "Přihlásit se",
+  },
+  allListMenu: [
+    {
+      id: 1,
+      listName: "Moje nákupy",
+      listCategories: [
+        {
+          id: 2,
+          icon: "./pri2.svg",
+          text: "Objednávky",
+          iconBlock: "./",
+        },
+        {
+          id: 3,
+          icon: "./výkupelektroniky.png",
+          text: "Výkup elektroniky",
+          iconBlock: "./",
+        },
+        {
+          id: 4,
+          icon: "./reklamace.png",
+          text: "Reklamace",
+          iconBlock: "./",
+        },
+        {
+          id: 5,
+          icon: "./dog-seating.png",
+          text: "Hlídací psi",
+          iconBlock: "./",
+          isAuth: false,
+        },
+        {
+          id: 6,
+          icon: "./heartMenu.png",
+          text: "Oblíbené",
+          iconBlock: "./",
+        },
+      ],
+    },
+    {
+      id: 7,
+      listName: "Moje knihovna",
+      listCategories: [
+        {
+          id: 8,
+          icon: "./open-book.png",
+          text: "E-knihy",
+          iconBlock: "./",
+          isAuth: false,
+        },
+        {
+          id: 9,
+          icon: "./certificate.png",
+          text: "Licence a hry",
+          iconBlock: "./",
+          isAuth: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      listName: "Můj účet",
+      listCategories: [
+        {
+          id: 11,
+          icon: "./acount.png",
+          text: "Fakturační údaje",
+          iconBlock: "./",
+          isAuth: false,
+        },
+        {
+          id: 12,
+          icon: "./delivery-van.png",
+          text: "Doručovací adresy",
+          iconBlock: "./",
+          isAuth: false,
+        },
+        {
+          id: 13,
+          icon: "./credit-card.png",
+          text: "Platební karty",
+          iconBlock: "./",
+          isAuth: false,
+        },
+        {
+          id: 14,
+          icon: "./lockMenu.png",
+          text: "Nastavení a zabezpečení",
+          iconBlock: "./",
+          isAuth: false,
+        },
+      ],
+    },
+    {
+      id: 15,
+      listName: "Kontakty",
+      listCategories: [
+        {
+          id: 16,
+          icon: "./prodejny.png",
+          text: "Prodejny a AlzaBoxy",
+          iconBlock: "./",
+        },
+        {
+          id: 17,
+          icon: "./poradit.png",
+          text: "Potřebuji poradit",
+          iconBlock: "./",
+        },
+      ],
+    },
+  ],
+  odhlasitse: {
+    icon: "./exit.png",
+    text: "Odhlásit se",
+  },
+};

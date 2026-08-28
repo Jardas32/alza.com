@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../css/menufooter.css";
 import { useCart } from "./CartContext";
 
+// Objednávky
 function MenuFooter() {
   const { totalProduct } = useCart();
   return (
@@ -9,7 +10,7 @@ function MenuFooter() {
       <li>
         <Link to="/">
           <img src="./home.png" alt="img" className="img-objednavky" />
-          Domu
+          Domů
         </Link>
       </li>
       <li>
@@ -24,7 +25,7 @@ function MenuFooter() {
             <img src="./cart.png" alt="img" className="cart-img" />
             <span className="totalCard totalCard-footer">{totalProduct}</span>
           </div>
-          Kosik
+          Košík
         </Link>
       </li>
       <li>
