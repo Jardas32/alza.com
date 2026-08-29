@@ -209,3 +209,42 @@
   font-weight: bold;
 }
 
+/* alzaPlus */
+.wrapper-alzaplus {
+  margin-top: 30px;
+  background-color: rgba(255, 129, 2, 0.06);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+.wrapper-alzaplus h3 span:nth-child(1) {
+  color: #003350;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.wrapper-alzaplus h3 span:nth-child(2) {
+  color: rgb(233, 152, 0);
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.wrapper-alzaplus .doruceni-text {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.wrapper-alzaplus .neplate-text {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}

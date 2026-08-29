@@ -98,7 +98,20 @@ function Menu() {
             </div>
 
             {user ? (
-              <div></div>
+              <div className="wrapper-alzaplus">
+                <h3>
+                  <span>alza</span>
+                  <span>plus+</span>
+                </h3>
+                <p className="doruceni-text">
+                  Doručení ZDARMA už od 25 Kč měsíčně
+                </p>
+                <p className="neplate-text">
+                  Neplaťte za doručení <br /> do AlzaBoxů, na prodejny <br /> a
+                  další odběrná místa.
+                </p>
+                <Link>Více o AlzaPlus+</Link>
+              </div>
             ) : (
               <>
                 <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
