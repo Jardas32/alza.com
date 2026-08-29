@@ -1,4 +1,4 @@
-import "../css/menu.css";
+import "../css/prihlasenimenufooter.css";
 import { Link } from "react-router-dom";
 import { prihlasitse } from "../data/data";
 import { allDataMenu } from "../data/data";

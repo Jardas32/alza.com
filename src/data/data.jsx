@@ -678,6 +678,7 @@ export const prihlasitse = {
       id: 1,
       name: "Přihlásit se",
       svg: "./pri1.svg",
+      isAuth: true,
     },
     {
       id: 2,
@@ -714,6 +715,7 @@ export const prihlasitse = {
       name: "Potřebuji poradit",
       svg: "./message.png",
     },
+    { id: 9, name: "Odhlásit se", svg: "./exit.png", isAuth: true },
   ],
   rightPrihlaseni: {
     icon: "./blue-user-icon.svg",
