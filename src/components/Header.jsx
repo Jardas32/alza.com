@@ -8,7 +8,7 @@ import Menu from "../components/Menu";
 function Header() {
   const [openSearch, setOpenSearch] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
-  const { totalProduct } = useCart();
+  const { user, totalProduct } = useCart();
 
   return (
     <header className="headers">
@@ -24,13 +24,24 @@ function Header() {
 
       <div
         onClick={() => setOpenLogin((open) => !open)}
-        className="wrapper-prihlaseni"
+        className={`wrapper-prihlaseni ${user ? "user" : ""}`}
       >
-        <img src="./user.png" alt="img-login" className="img-login" />
-        <p className="text-prihlaseni">
-          <span>Moje Alza</span>
-          <span>Prihlasit se</span>
-        </p>
+        <div className={`wrapper-user-img-header ${user ? "user" : ""}`}>
+          <img
+            src={`${user ? user.img : "./user.png"}`}
+            alt="img-login"
+            className={`img-login ${user ? "user" : ""}`}
+          />
+        </div>
+
+        {user ? (
+          <h4 className="user-name">{user.username.slice(0, 14)}...</h4>
+        ) : (
+          <p className="text-prihlaseni">
+            <span>Moje Alza</span>
+            <span>Prihlasit se</span>
+          </p>
+        )}
 
         <IoIosArrowDown
           className={`img-arrow-down ${openLogin ? "active" : ""}`}

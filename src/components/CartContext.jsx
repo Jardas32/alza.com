@@ -30,10 +30,10 @@ export const CartProvider = ({ children }) => {
   // addUser
   const registration = () => {
     setUser({
-      id: new Date().toISOString(),
-      username: "Jarda Dovhopolov",
-      email: "jaraddjarda@gmail.com",
-      img: "./imgProfile.jpg",
+      id: crypto.randomUUID(),
+      username: "Alex Duglas",
+      email: "duglasalex@gmail.com",
+      img: "./alex_duglasuser.png",
     });
   };
 

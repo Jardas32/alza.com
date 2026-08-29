@@ -11,6 +11,8 @@ function Menu() {
     prihlasitse.leftPrihlaseni.length - 1
   );
 
+  console.log(user?.id);
+
   return (
     <>
       <div className="wrapper-prihlaseni-left">
@@ -79,9 +81,11 @@ function Menu() {
         {prihlasitse?.rightPrihlaseni && (
           <div className="wrapper-prihlaseni-header-right-bg">
             <div className="wrapper-user-left">
-              <div className={`wrapper-user-img ${user ? "active" : ""}`}>
+              <div
+                className={`wrapper-user-img-header ${user ? "active" : ""}`}
+              >
                 <img
-                  className={`icon-user ${user ? "active" : ""}`}
+                  className={`icon-user-header ${user ? "active" : ""}`}
                   src={user ? user.img : prihlasitse.rightPrihlaseni.icon}
                   alt="icon-blue"
                 />
@@ -93,13 +97,21 @@ function Menu() {
               </div>
             </div>
 
-            <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
-            <p>{prihlasitse.rightPrihlaseni.podrobnosti}</p>
+            {user ? (
+              <div></div>
+            ) : (
+              <>
+                <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
+                <p>{prihlasitse.rightPrihlaseni.podrobnosti}</p>
 
-            <Link to="/login">{prihlasitse.rightPrihlaseni.prihlasitse}</Link>
-            <Link to="/registration">
-              {prihlasitse.rightPrihlaseni.noveRegistrace}
-            </Link>
+                <Link to="/login">
+                  {prihlasitse.rightPrihlaseni.prihlasitse}
+                </Link>
+                <Link to="/registration">
+                  {prihlasitse.rightPrihlaseni.noveRegistrace}
+                </Link>
+              </>
+            )}
           </div>
         )}
       </div>
