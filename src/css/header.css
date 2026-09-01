@@ -89,6 +89,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-y: auto;
+  height: 340px;
 }
 
 .wrapper-result-product {
@@ -418,6 +420,23 @@
 }
 
 @media (max-width: 530px) {
+  .input-search {
+    width: 100%;
+  }
+
+  .wrapper-search.active {
+    position: fixed;
+    top: 6px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0 0 4px #5ab4e9;
+  }
+
   .wrapper-search-result {
     position: fixed;
     top: 60px;

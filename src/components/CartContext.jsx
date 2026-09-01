@@ -33,6 +33,7 @@ export const CartProvider = ({ children }) => {
     );
 
     setSearchResult(result);
+
   }, [search, products]);
 
   useEffect(() => {

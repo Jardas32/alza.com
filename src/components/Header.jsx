@@ -17,6 +17,7 @@ function Header() {
     search,
     setSearch,
     searchResult,
+    setInfoproduct,
   } = useCart();
 
   return (
@@ -26,12 +27,10 @@ function Header() {
       </Link>
 
       <div className="wrapper-search-bg">
-        <div
-          onClick={() => setOpenSearchResult(true)}
-          className="wrapper-search"
-        >
+        <div className={`wrapper-search  ${openSearchResult ? "active" : ""}`}>
           <img src="./glass.png" alt="img-search" className="img-search" />
           <input
+            onClick={() => setOpenSearchResult(true)}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="input-search"
@@ -39,7 +38,9 @@ function Header() {
             placeholder="Co hledáte?"
           />
           <button className="btn-clear-input">X</button>
-          <button className="btn-search">Hledat</button>
+          <button className="btn-search">
+            {openSearchResult ? "Zrusit" : "Hledat"}
+          </button>
         </div>
         <div
           ref={opensearchRef}
@@ -49,7 +50,10 @@ function Header() {
             {searchResult.map((result) => (
               <div key={result.id} className="wrapper-result-product">
                 <Link
-                  onClick={() => setOpenSearchResult(false)}
+                  onClick={() => {
+                    setInfoproduct(result);
+                    setOpenSearchResult(false);
+                  }}
                   to={`/${encodeURIComponent(
                     result.allcategories
                   )}/${encodeURIComponent(
