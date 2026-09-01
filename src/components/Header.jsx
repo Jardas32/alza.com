@@ -8,18 +8,69 @@ import Menu from "../components/Menu";
 function Header() {
   const [openSearch, setOpenSearch] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
-  const { user, totalProduct } = useCart();
+  const {
+    user,
+    totalProduct,
+    openSearchResult,
+    setOpenSearchResult,
+    opensearchRef,
+    search,
+    setSearch,
+    searchResult,
+  } = useCart();
 
   return (
     <header className="headers">
       <Link to="/">
         <img src="./alza_cz.svg" alt="img-logo" className="logo" />
       </Link>
-      <div className="wrapper-search">
-        <img src="./glass.png" alt="img-search" className="img-search" />
-        <input type="text" placeholder="Co hledáte?" />
-        <button className="btn-clear-input">X</button>
-        <button className="btn-search">Hledat</button>
+
+      <div className="wrapper-search-bg">
+        <div
+          onClick={() => setOpenSearchResult(true)}
+          className="wrapper-search"
+        >
+          <img src="./glass.png" alt="img-search" className="img-search" />
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="input-search"
+            type="text"
+            placeholder="Co hledáte?"
+          />
+          <button className="btn-clear-input">X</button>
+          <button className="btn-search">Hledat</button>
+        </div>
+        <div
+          ref={opensearchRef}
+          className={`wrapper-search-result ${openSearchResult ? "open" : ""}`}
+        >
+          <div className="wrapper-result">
+            {searchResult.map((result) => (
+              <div key={result.id} className="wrapper-result-product">
+                <Link
+                  onClick={() => setOpenSearchResult(false)}
+                  to={`/${encodeURIComponent(
+                    result.allcategories
+                  )}/${encodeURIComponent(
+                    result.categories
+                  )}/${encodeURIComponent(
+                    result.category
+                  )}/${encodeURIComponent(result.title)}`}
+                  className="wrapper-result-product-link"
+                >
+                  <img
+                    className="search-product-img"
+                    src={result.img}
+                    alt={result.title}
+                  />
+
+                  <span>{result.title}</span>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div
@@ -63,20 +114,33 @@ function Header() {
             />
           )}
 
-          {openSearch && (
-            <div className="wrapper-search-open">
-              <img
-                onClick={() => setOpenSearch(false)}
-                src="./glass.png"
-                alt="img-search"
-                className="img-search-open"
-              />
-              <input type="text" placeholder="Co hledate?" />
-              <button className="btn-clear-input-open">X</button>
-              <button className="btn-search-open">Hledat</button>
+          {/* {openSearch && (
+            <div className="wrapper-mobile-search-bg">
+              <div className="wrapper-search-bg">
+                <div
+                  onClick={() => setOpenSearchResult(true)}
+                  className="wrapper-search-open"
+                >
+                  <img
+                    onClick={() => setOpenSearch(false)}
+                    src="./glass.png"
+                    alt="img-search"
+                    className="img-search-open"
+                  />
+                  <input
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    type="text"
+                    placeholder="Co hledate?"
+                  />
+                  <button className="btn-clear-input-open">X</button>
+                  <button className="btn-search-open">Hledat</button>
+                </div>
+              </div>
             </div>
-          )}
+          )} */}
         </div>
+
         <Link className="orders hidens" to="/objednavky">
           <img src="./orders.png" alt="img" className="img-objednavky" />
         </Link>

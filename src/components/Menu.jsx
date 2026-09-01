@@ -11,8 +11,6 @@ function Menu() {
     prihlasitse.leftPrihlaseni.length - 1
   );
 
-  console.log(user?.id);
-
   return (
     <>
       <div className="wrapper-prihlaseni-left">

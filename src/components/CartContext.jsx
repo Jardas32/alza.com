@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useRef } from "react";
 import { allProducts } from "../data/data";
 const CartContext = createContext();
 
@@ -16,6 +16,36 @@ export const CartProvider = ({ children }) => {
     const savedOblibene = localStorage.getItem("oblibene");
     return savedOblibene ? JSON.parse(savedOblibene) : [];
   });
+
+  const [searchResult, setSearchResult] = useState([]);
+  const [search, setSearch] = useState("");
+  const [openSearchResult, setOpenSearchResult] = useState(false);
+  const opensearchRef = useRef();
+  
+  useEffect(() => {
+    if (!search.trim()) {
+      setSearchResult(products.slice(0, 6));
+      return;
+    }
+
+    const result = products.filter((p) =>
+      p.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+    setSearchResult(result);
+  }, [search, products]);
+
+  useEffect(() => {
+    const openSearchResultRef = (e) => {
+      if (opensearchRef.current && !opensearchRef.current.contains(e.target)) {
+        setOpenSearchResult(false);
+      }
+    };
+
+    window.addEventListener("mousedown", openSearchResultRef);
+
+    return () => window.removeEventListener("mousedown", openSearchResultRef);
+  }, [openSearchResult]);
 
   // User
   const [user, setUser] = useState(() => {
@@ -206,6 +236,13 @@ export const CartProvider = ({ children }) => {
         user,
         registration,
         logOut,
+        openSearchResult,
+        setOpenSearchResult,
+        opensearchRef,
+        searchResult,
+        setSearchResult,
+        search,
+        setSearch,
       }}
     >
       {children}

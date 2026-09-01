@@ -23,9 +23,16 @@
   width: 164px;
 }
 
+.wrapper-search-bg {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper-search {
   background-color: #fff;
-  max-width: 550px;
   width: 100%;
   height: 42px;
   display: flex;
@@ -40,7 +47,7 @@
   margin-left: 15px;
 }
 
-.wrapper-search input {
+.input-search {
   color: rgb(112, 112, 112);
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -51,8 +58,65 @@
   border: none;
 }
 
+.wrapper-search-result {
+  transition: all 0.3s;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: -460px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  padding: 20px;
+  width: 100%;
+  min-height: 450px;
+  border-radius: 3px;
+  border: 1px solid rgb(211, 211, 211);
+  box-shadow: 0 0 4px #5ab4e9;
+}
+
+.wrapper-search-result.open {
+  display: block;
+  opacity: 1;
+  z-index: 100;
+}
+
 .wrapper-search input::placeholder {
   color: rgb(188, 188, 188);
+}
+
+/* Result search */
+.wrapper-result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper-result-product {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-result-product-link {
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #25516b;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.wrapper-result-product:hover .wrapper-result-product-link {
+  text-decoration: underline;
+}
+
+.search-product-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .btn-clear-input {
@@ -341,14 +405,37 @@
   }
 
   .wrapper-search {
-    display: none;
+    /* display: none; */
   }
 
   .wrapper-open-search {
-    display: flex;
+    /* display: flex; */
   }
 
   .wrapper-search-open {
-    display: flex;
+    /* display: flex; */
+  }
+}
+
+@media (max-width: 530px) {
+  .wrapper-search-result {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    padding: 20px 10px;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .wrapper-result-product-link {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .search-product-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
   }
 }
