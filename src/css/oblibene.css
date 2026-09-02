@@ -6,6 +6,7 @@
 .wrapper-oblibene-bg {
   margin-top: 110px;
   padding: 20px;
+  min-height: 50vh;
 }
 
 .wrapper-oblibene-count {
@@ -160,6 +161,12 @@
 
 .btn-oblibene-addcart:hover {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.415);
+}
+
+@media (max-width: 753px) {
+  .wrapper-oblibene-bg {
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 478px) {

@@ -65,7 +65,7 @@ function Oblibene() {
             <div className="wrapper-delete-addcart">
               <button
                 onClick={() => {
-                  handleAddtoCart(product.id);
+                  handleAddtoCart(product);
                   inCart(product.id);
                 }}
                 className="btn-oblibene-addcart"
