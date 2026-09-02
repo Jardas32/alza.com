@@ -13,6 +13,7 @@
   align-items: center;
   gap: 10px;
   overflow-y: hidden;
+  overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
   scrollbar-width: thin;
@@ -34,16 +35,16 @@
 
 .backelink-home {
   cursor: pointer;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
 .page-link {
   color: var(--color);
-  font-size: 13px;
+  font-size: 15px;
   font-family: var(--fontfamaly);
-  font-weight: 600;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +53,12 @@
 
 .page-link.active {
   color: rgb(88, 88, 88);
+}
+
+@media (max-width: 753px) {
+  .wrapper-backelink {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 490px) {

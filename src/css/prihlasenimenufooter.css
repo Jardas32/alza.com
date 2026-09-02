@@ -212,8 +212,9 @@
   font-weight: bold;
 }
 
-@media (max-width: 752px) {
+@media (max-width: 753px) {
   .wrapper-prihlaseni-footer-acount {
+    margin-top: 120px;
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;

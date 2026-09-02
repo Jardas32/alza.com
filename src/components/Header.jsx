@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useCart } from "../components/CartContext";
 import { IoIosArrowDown } from "react-icons/io";
+import { TiDelete } from "react-icons/ti";
 import Menu from "../components/Menu";
 
 function Header() {
@@ -37,10 +38,10 @@ function Header() {
             type="text"
             placeholder="Co hledáte?"
           />
-          <button className="btn-clear-input">X</button>
-          <button className="btn-search">
-            {openSearchResult ? "Zrusit" : "Hledat"}
+          <button onClick={() => setSearch("")} className="btn-clear-input">
+            X
           </button>
+          <button className="btn-search">Hledat</button>
         </div>
         <div
           ref={opensearchRef}
@@ -110,39 +111,31 @@ function Header() {
       <div className="wrapper-navigation">
         <div className="wrapper-open-search">
           {!openSearch && (
-            <img
-              onClick={() => setOpenSearch(true)}
-              src="./glass.png"
-              alt="img-search"
-              className="img-search-open"
-            />
-          )}
-
-          {/* {openSearch && (
             <div className="wrapper-mobile-search-bg">
               <div className="wrapper-search-bg">
                 <div
                   onClick={() => setOpenSearchResult(true)}
                   className="wrapper-search-open"
                 >
-                  <img
-                    onClick={() => setOpenSearch(false)}
-                    src="./glass.png"
-                    alt="img-search"
-                    className="img-search-open"
-                  />
                   <input
+                    className="input-search-mobile"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     type="text"
                     placeholder="Co hledate?"
                   />
-                  <button className="btn-clear-input-open">X</button>
-                  <button className="btn-search-open">Hledat</button>
+                  <button
+                    onClick={() => setSearch("")}
+                    className="btn-clear-input"
+                  >
+                    X
+                  </button>
                 </div>
+
+                <button className="btn-zrusit">Zrušit</button>
               </div>
             </div>
-          )} */}
+          )}
         </div>
 
         <Link className="orders hidens" to="/objednavky">

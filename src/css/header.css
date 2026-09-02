@@ -62,13 +62,12 @@
   transition: all 0.3s;
   opacity: 0;
   position: absolute;
+  top: 50px;
   left: 0;
-  bottom: -460px;
   background-color: rgb(255, 255, 255);
   display: none;
   padding: 20px;
   width: 100%;
-  min-height: 450px;
   border-radius: 3px;
   border: 1px solid rgb(211, 211, 211);
   box-shadow: 0 0 4px #5ab4e9;
@@ -90,7 +89,7 @@
   flex-direction: column;
   gap: 10px;
   overflow-y: auto;
-  height: 340px;
+  max-height: 340px;
 }
 
 .wrapper-result-product {
@@ -158,6 +157,22 @@
 
 .btn-search:hover {
   background-color: #067bc0;
+}
+
+.btn-zrusit {
+  display: none;
+  transition: all 0.3s;
+  background-color: transparent;
+  color: #25516b;
+  border: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-zrusit:hover {
+  text-decoration: underline;
 }
 
 .wrapper-prihlaseni {
@@ -353,8 +368,10 @@
   color: #fff;
   border: none;
   border-radius: 100%;
-  font-size: 12px;
-  padding: 2px 4px;
+}
+
+.btn-icon-clear {
+  font-size: 22px;
 }
 
 .btn-clear-input-open:hover {
@@ -383,8 +400,9 @@
 @media (max-width: 753px) {
   .headers {
     background-image: linear-gradient(to right, rgb(232, 243, 255), #fff);
-    min-height: 0;
+    min-height: 110px;
     padding: 10px;
+    align-items: start;
   }
 
   .logo {
@@ -402,26 +420,52 @@
     display: none;
   }
 
+  .wrapper-mobile-search-bg {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .wrapper-search-bg {
+    max-width: 753px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .wrapper-search-open {
+    border-radius: 30px;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .hidens {
     display: none;
   }
 
   .wrapper-search {
-    /* display: none; */
+    display: none;
   }
 
   .wrapper-open-search {
-    /* display: flex; */
+    display: flex;
   }
 
   .wrapper-search-open {
-    /* display: flex; */
+    display: flex;
   }
-}
 
-@media (max-width: 530px) {
   .input-search {
     width: 100%;
+  }
+
+  .btn-zrusit {
+    display: block;
   }
 
   .wrapper-search.active {
@@ -439,7 +483,7 @@
 
   .wrapper-search-result {
     position: fixed;
-    top: 60px;
+    top: 110px;
     left: 0;
     z-index: 100;
     padding: 20px 10px;
