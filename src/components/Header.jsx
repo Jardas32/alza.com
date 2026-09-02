@@ -43,40 +43,49 @@ function Header() {
           </button>
           <button className="btn-search">Hledat</button>
         </div>
+
         <div
           ref={opensearchRef}
           className={`wrapper-search-result ${openSearchResult ? "open" : ""}`}
         >
           <div className="wrapper-result">
-            {searchResult.map((result) => (
-              <div key={result.id} className="wrapper-result-product">
-                <Link
-                  onClick={() => {
-                    setInfoproduct(result);
-                    setOpenSearchResult(false);
-                  }}
-                  to={`/${encodeURIComponent(
-                    result.allcategories
-                  )}/${encodeURIComponent(
-                    result.categories
-                  )}/${encodeURIComponent(
-                    result.category
-                  )}/${encodeURIComponent(result.title)}`}
-                  className="wrapper-result-product-link"
-                >
-                  <img
-                    className="search-product-img"
-                    src={result.img}
-                    alt={result.title}
-                  />
+            {searchResult.length === 0 ? (
+              <h3 className="nic-neni-result">Není . . .</h3>
+            ) : (
+              searchResult.map((result) => (
+                <div key={result.id} className="wrapper-result-product">
+                  <Link
+                    onClick={() => {
+                      setInfoproduct(result);
+                      setOpenSearchResult(false);
+                    }}
+                    to={`/${encodeURIComponent(
+                      result.allcategories
+                    )}/${encodeURIComponent(
+                      result.categories
+                    )}/${encodeURIComponent(
+                      result.category
+                    )}/${encodeURIComponent(result.title)}`}
+                    className="wrapper-result-product-link"
+                  >
+                    <img
+                      className="search-product-img"
+                      src={result.img}
+                      alt={result.title}
+                    />
 
-                  <span>{result.title}</span>
-                </Link>
-              </div>
-            ))}
+                    <span>{result.title}</span>
+                  </Link>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>
+
+      <div
+        className={`overflow-open-search ${openSearchResult ? "active" : ""}`}
+      ></div>
 
       <div
         onClick={() => setOpenLogin((open) => !open)}
@@ -122,7 +131,7 @@ function Header() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     type="text"
-                    placeholder="Co hledate?"
+                    placeholder="Co hledáte?"
                   />
                   <button
                     onClick={() => setSearch("")}

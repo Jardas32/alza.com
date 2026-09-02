@@ -25,6 +25,7 @@
 
 .wrapper-search-bg {
   position: relative;
+  z-index: 100;
   max-width: 600px;
   width: 100%;
   display: flex;
@@ -56,6 +57,22 @@
   height: 100%;
   outline: none;
   border: none;
+}
+
+.overflow-open-search {
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+
+.overflow-open-search.active {
+  display: initial;
 }
 
 .wrapper-search-result {
@@ -90,6 +107,13 @@
   gap: 10px;
   overflow-y: auto;
   max-height: 340px;
+}
+
+.nic-neni-result {
+  color: rgb(151, 151, 151);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .wrapper-result-product {
@@ -348,7 +372,7 @@
   box-shadow: 0 0px 4px #59b9f0;
 }
 
-.wrapper-search-open input {
+.input-search {
   color: rgb(134, 134, 134);
   font-size: 13px;
   font-family: "Roboto", sans-serif;
@@ -420,6 +444,10 @@
     display: none;
   }
 
+  .overflow-open-search.active {
+    display: none;
+  }
+
   .wrapper-mobile-search-bg {
     position: absolute;
     top: 62px;
@@ -441,6 +469,7 @@
   .wrapper-search-open {
     border-radius: 30px;
     width: 100%;
+    min-height: 40px;
     overflow: hidden;
   }
 
@@ -458,27 +487,28 @@
 
   .wrapper-search-open {
     display: flex;
+    box-shadow: none;
   }
 
-  .input-search {
+  .wrapper-search-open:focus-within {
+    border: 1px solid #5ab4e9;
+  }
+
+  .input-search-mobile {
     width: 100%;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+  }
+
+  .input-search-mobile::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 15px;
   }
 
   .btn-zrusit {
     display: block;
-  }
-
-  .wrapper-search.active {
-    position: fixed;
-    top: 6px;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-    border: 1px solid rgb(211, 211, 211);
-    box-shadow: 0 0 4px #5ab4e9;
   }
 
   .wrapper-search-result {
@@ -492,8 +522,8 @@
   }
 
   .wrapper-result-product-link {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .search-product-img {

@@ -100,6 +100,23 @@ function MenuPage() {
               </div>
             </div>
 
+            {user && (
+              <div className="wrapper-alzaplus">
+                <h3>
+                  <span>alza</span>
+                  <span>plus+</span>
+                </h3>
+                <p className="doruceni-text">
+                  Doručení ZDARMA už od 25 Kč měsíčně
+                </p>
+                <p className="neplate-text">
+                  Neplaťte za doručení do AlzaBoxů, na prodejny a další odběrná
+                  místa.
+                </p>
+                <Link>Více o AlzaPlus+</Link>
+              </div>
+            )}
+
             {!user && (
               <>
                 <h4>{prihlasitse.rightPrihlaseni.textVyhody}</h4>
