@@ -524,6 +524,8 @@
     padding: 10px;
     width: 100%;
     min-height: 100vh;
+    box-shadow: none;
+    border: none;
   }
 
   .wrapper-result {
@@ -542,9 +544,9 @@
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 375px) {
   .wrapper-result {
-    min-height: 66vh;
+    min-height: 60vh;
   }
 
   .wrapper-result-product-link {
