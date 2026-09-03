@@ -21,7 +21,7 @@ export const CartProvider = ({ children }) => {
   const [search, setSearch] = useState("");
   const [openSearchResult, setOpenSearchResult] = useState(false);
   const opensearchRef = useRef();
-  
+
   useEffect(() => {
     if (!search.trim()) {
       setSearchResult(products.slice(0, 6));
@@ -33,7 +33,6 @@ export const CartProvider = ({ children }) => {
     );
 
     setSearchResult(result);
-
   }, [search, products]);
 
   useEffect(() => {
@@ -46,6 +45,12 @@ export const CartProvider = ({ children }) => {
     window.addEventListener("mousedown", openSearchResultRef);
 
     return () => window.removeEventListener("mousedown", openSearchResultRef);
+  }, [openSearchResult]);
+
+  useEffect(() => {
+    if (!openSearchResult) {
+      setSearch("");
+    }
   }, [openSearchResult]);
 
   // User

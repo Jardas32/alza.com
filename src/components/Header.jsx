@@ -21,6 +21,8 @@ function Header() {
     setInfoproduct,
   } = useCart();
 
+  console.log(search);
+
   return (
     <header className="headers">
       <Link to="/">
@@ -119,32 +121,27 @@ function Header() {
 
       <div className="wrapper-navigation">
         <div className="wrapper-open-search">
-          {!openSearch && (
-            <div className="wrapper-mobile-search-bg">
-              <div className="wrapper-search-bg">
-                <div
-                  onClick={() => setOpenSearchResult(true)}
-                  className="wrapper-search-open"
-                >
-                  <input
-                    className="input-search-mobile"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    type="text"
-                    placeholder="Co hledáte?"
-                  />
-                  <button
-                    onClick={() => setSearch("")}
-                    className="btn-clear-input"
-                  >
-                    X
-                  </button>
-                </div>
-
-                {openSearchResult && <button className="btn-zrusit">Zrušit</button>}
+          <div className="wrapper-mobile-search-bg">
+            <div className="wrapper-search-bg">
+              <div
+                onClick={() => setOpenSearchResult(true)}
+                className="wrapper-search-open"
+              >
+                <input
+                  className="input-search-mobile"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  type="text"
+                  placeholder="Co hledáte?"
+                />
               </div>
+              {openSearchResult && (
+                <button onClick={() => setSearch("")} className="btn-zrusit">
+                  Zrušit
+                </button>
+              )}
             </div>
-          )}
+          </div>
         </div>
 
         <Link className="orders hidens" to="/objednavky">
