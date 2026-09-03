@@ -21,8 +21,6 @@ function Header() {
     setInfoproduct,
   } = useCart();
 
-  console.log(search);
-
   return (
     <header className="headers">
       <Link to="/">
