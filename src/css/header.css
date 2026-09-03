@@ -529,7 +529,8 @@
   }
 
   .wrapper-result {
-    max-height: 70vh;
+    max-height: 100vh;
+    padding-bottom: 195px;
   }
 
   .wrapper-result-product-link {
@@ -544,9 +545,9 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 377px) {
   .wrapper-result {
-    min-height: 60vh;
+    
   }
 
   .wrapper-result-product-link {
