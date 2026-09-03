@@ -16,7 +16,7 @@
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .wrapper-backelonk-scroll::-webkit-scrollbar {

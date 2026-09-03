@@ -25,8 +25,6 @@ function CategoryProduct() {
     (p) => p.categories?.toLowerCase() === category?.toLowerCase()
   );
 
-  console.log(getMobileProducts);
-
   return (
     <div className="wrapper-category-brand">
       <div className="wrapper-top-page">

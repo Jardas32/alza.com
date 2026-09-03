@@ -6,6 +6,7 @@
 }
 
 .wrapper-infoproduct-bg {
+  background-image: linear-gradient(to right, rgb(245, 250, 255), #fff);
   width: 100%;
   min-height: 500px;
   display: grid;

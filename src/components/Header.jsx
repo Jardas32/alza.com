@@ -141,7 +141,7 @@ function Header() {
                   </button>
                 </div>
 
-                <button className="btn-zrusit">Zrušit</button>
+                {openSearchResult && <button className="btn-zrusit">Zrušit</button>}
               </div>
             </div>
           )}
